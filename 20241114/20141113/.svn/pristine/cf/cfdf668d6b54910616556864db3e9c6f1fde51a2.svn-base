@@ -1,0 +1,747 @@
+VERSION 5.00
+Object = "{831FDD16-0C5C-11D2-A9FC-0000F8754DA1}#2.0#0"; "MSCOMCTL.OCX"
+Begin VB.MDIForm mdifrmRTP 
+   BackColor       =   &H8000000C&
+   Caption         =   "ProRTP"
+   ClientHeight    =   8775
+   ClientLeft      =   60
+   ClientTop       =   450
+   ClientWidth     =   14295
+   Icon            =   "mdifrmRTP.frx":0000
+   LinkTopic       =   "MDIForm1"
+   StartUpPosition =   3  '窗口缺省
+   WindowState     =   2  'Maximized
+   Begin VB.Timer tmrTime 
+      Interval        =   1000
+      Left            =   12240
+      Top             =   7680
+   End
+   Begin MSComctlLib.ImageList imgToolBarList 
+      Left            =   4920
+      Top             =   1320
+      _ExtentX        =   1005
+      _ExtentY        =   1005
+      BackColor       =   -2147483643
+      ImageWidth      =   48
+      ImageHeight     =   48
+      MaskColor       =   12632256
+      _Version        =   393216
+      BeginProperty Images {2C247F25-8591-11D1-B16A-00C0F0283628} 
+         NumListImages   =   26
+         BeginProperty ListImage1 {2C247F27-8591-11D1-B16A-00C0F0283628} 
+            Picture         =   "mdifrmRTP.frx":0ECA
+            Key             =   "iRun"
+         EndProperty
+         BeginProperty ListImage2 {2C247F27-8591-11D1-B16A-00C0F0283628} 
+            Picture         =   "mdifrmRTP.frx":1DA4
+            Key             =   "iStop"
+         EndProperty
+         BeginProperty ListImage3 {2C247F27-8591-11D1-B16A-00C0F0283628} 
+            Picture         =   "mdifrmRTP.frx":2C7E
+            Key             =   "iProcess"
+         EndProperty
+         BeginProperty ListImage4 {2C247F27-8591-11D1-B16A-00C0F0283628} 
+            Picture         =   "mdifrmRTP.frx":3B58
+            Key             =   ""
+         EndProperty
+         BeginProperty ListImage5 {2C247F27-8591-11D1-B16A-00C0F0283628} 
+            Picture         =   "mdifrmRTP.frx":4A32
+            Key             =   ""
+         EndProperty
+         BeginProperty ListImage6 {2C247F27-8591-11D1-B16A-00C0F0283628} 
+            Picture         =   "mdifrmRTP.frx":590C
+            Key             =   ""
+         EndProperty
+         BeginProperty ListImage7 {2C247F27-8591-11D1-B16A-00C0F0283628} 
+            Picture         =   "mdifrmRTP.frx":67E6
+            Key             =   ""
+         EndProperty
+         BeginProperty ListImage8 {2C247F27-8591-11D1-B16A-00C0F0283628} 
+            Picture         =   "mdifrmRTP.frx":76C0
+            Key             =   ""
+         EndProperty
+         BeginProperty ListImage9 {2C247F27-8591-11D1-B16A-00C0F0283628} 
+            Picture         =   "mdifrmRTP.frx":859A
+            Key             =   "iLogin"
+         EndProperty
+         BeginProperty ListImage10 {2C247F27-8591-11D1-B16A-00C0F0283628} 
+            Picture         =   "mdifrmRTP.frx":9474
+            Key             =   ""
+         EndProperty
+         BeginProperty ListImage11 {2C247F27-8591-11D1-B16A-00C0F0283628} 
+            Picture         =   "mdifrmRTP.frx":978E
+            Key             =   "iBuzzerOn"
+         EndProperty
+         BeginProperty ListImage12 {2C247F27-8591-11D1-B16A-00C0F0283628} 
+            Picture         =   "mdifrmRTP.frx":A068
+            Key             =   "iBuzzerOff"
+         EndProperty
+         BeginProperty ListImage13 {2C247F27-8591-11D1-B16A-00C0F0283628} 
+            Picture         =   "mdifrmRTP.frx":A942
+            Key             =   "iAsk"
+         EndProperty
+         BeginProperty ListImage14 {2C247F27-8591-11D1-B16A-00C0F0283628} 
+            Picture         =   "mdifrmRTP.frx":AD94
+            Key             =   "iWarning"
+         EndProperty
+         BeginProperty ListImage15 {2C247F27-8591-11D1-B16A-00C0F0283628} 
+            Picture         =   "mdifrmRTP.frx":B1E6
+            Key             =   "iAlarm"
+         EndProperty
+         BeginProperty ListImage16 {2C247F27-8591-11D1-B16A-00C0F0283628} 
+            Picture         =   "mdifrmRTP.frx":B638
+            Key             =   "iNormal"
+         EndProperty
+         BeginProperty ListImage17 {2C247F27-8591-11D1-B16A-00C0F0283628} 
+            Picture         =   "mdifrmRTP.frx":BA8A
+            Key             =   ""
+         EndProperty
+         BeginProperty ListImage18 {2C247F27-8591-11D1-B16A-00C0F0283628} 
+            Picture         =   "mdifrmRTP.frx":E70D
+            Key             =   ""
+         EndProperty
+         BeginProperty ListImage19 {2C247F27-8591-11D1-B16A-00C0F0283628} 
+            Picture         =   "mdifrmRTP.frx":103E7
+            Key             =   ""
+         EndProperty
+         BeginProperty ListImage20 {2C247F27-8591-11D1-B16A-00C0F0283628} 
+            Picture         =   "mdifrmRTP.frx":120C1
+            Key             =   ""
+         EndProperty
+         BeginProperty ListImage21 {2C247F27-8591-11D1-B16A-00C0F0283628} 
+            Picture         =   "mdifrmRTP.frx":1367B
+            Key             =   ""
+         EndProperty
+         BeginProperty ListImage22 {2C247F27-8591-11D1-B16A-00C0F0283628} 
+            Picture         =   "mdifrmRTP.frx":15355
+            Key             =   ""
+         EndProperty
+         BeginProperty ListImage23 {2C247F27-8591-11D1-B16A-00C0F0283628} 
+            Picture         =   "mdifrmRTP.frx":17787
+            Key             =   ""
+         EndProperty
+         BeginProperty ListImage24 {2C247F27-8591-11D1-B16A-00C0F0283628} 
+            Picture         =   "mdifrmRTP.frx":19BB9
+            Key             =   ""
+         EndProperty
+         BeginProperty ListImage25 {2C247F27-8591-11D1-B16A-00C0F0283628} 
+            Picture         =   "mdifrmRTP.frx":25C0B
+            Key             =   ""
+         EndProperty
+         BeginProperty ListImage26 {2C247F27-8591-11D1-B16A-00C0F0283628} 
+            Picture         =   "mdifrmRTP.frx":31C5D
+            Key             =   ""
+         EndProperty
+      EndProperty
+   End
+   Begin MSComctlLib.Toolbar tbrRTP 
+      Align           =   1  'Align Top
+      Height          =   2250
+      Left            =   0
+      TabIndex        =   1
+      Top             =   0
+      Width           =   14295
+      _ExtentX        =   25215
+      _ExtentY        =   3969
+      ButtonWidth     =   2196
+      ButtonHeight    =   1905
+      ToolTips        =   0   'False
+      Appearance      =   1
+      ImageList       =   "imgToolBarList"
+      _Version        =   393216
+      BeginProperty Buttons {66833FE8-8583-11D1-B16A-00C0F0283628} 
+         NumButtons      =   13
+         BeginProperty Button1 {66833FEA-8583-11D1-B16A-00C0F0283628} 
+            Caption         =   "執行加工"
+            Key             =   "iRun"
+            ImageIndex      =   1
+         EndProperty
+         BeginProperty Button2 {66833FEA-8583-11D1-B16A-00C0F0283628} 
+            Caption         =   "停止"
+            Key             =   "iStop"
+            ImageIndex      =   2
+         EndProperty
+         BeginProperty Button3 {66833FEA-8583-11D1-B16A-00C0F0283628} 
+            Caption         =   "工藝曲線"
+            Key             =   "iProcess"
+            ImageIndex      =   3
+         EndProperty
+         BeginProperty Button4 {66833FEA-8583-11D1-B16A-00C0F0283628} 
+            Caption         =   "開啟程序"
+            Key             =   "iOpen"
+            ImageIndex      =   25
+         EndProperty
+         BeginProperty Button5 {66833FEA-8583-11D1-B16A-00C0F0283628} 
+            Caption         =   "程序編輯"
+            Key             =   "iRecipe"
+            ImageIndex      =   4
+         EndProperty
+         BeginProperty Button6 {66833FEA-8583-11D1-B16A-00C0F0283628} 
+            Caption         =   "機台狀態"
+            Key             =   "iDiagnosis"
+            ImageIndex      =   5
+         EndProperty
+         BeginProperty Button7 {66833FEA-8583-11D1-B16A-00C0F0283628} 
+            Caption         =   "機台設置"
+            Key             =   "iConfiguration"
+            ImageIndex      =   6
+         EndProperty
+         BeginProperty Button8 {66833FEA-8583-11D1-B16A-00C0F0283628} 
+            Caption         =   "歷史曲線圖"
+            Key             =   "iChart Log"
+            ImageIndex      =   19
+         EndProperty
+         BeginProperty Button9 {66833FEA-8583-11D1-B16A-00C0F0283628} 
+            Caption         =   "操作記錄"
+            Key             =   "iHistory"
+            ImageIndex      =   21
+         EndProperty
+         BeginProperty Button10 {66833FEA-8583-11D1-B16A-00C0F0283628} 
+            Caption         =   "登出"
+            Key             =   "iLogout"
+            ImageIndex      =   9
+         EndProperty
+         BeginProperty Button11 {66833FEA-8583-11D1-B16A-00C0F0283628} 
+            Caption         =   "解除警報"
+            Key             =   "iAlarmReset"
+            ImageIndex      =   26
+         EndProperty
+         BeginProperty Button12 {66833FEA-8583-11D1-B16A-00C0F0283628} 
+            Caption         =   "關於             "
+            Key             =   "iAbout"
+            ImageIndex      =   20
+         EndProperty
+         BeginProperty Button13 {66833FEA-8583-11D1-B16A-00C0F0283628} 
+            Caption         =   "結束離開"
+            Key             =   "iExit"
+            ImageIndex      =   18
+         EndProperty
+      EndProperty
+   End
+   Begin MSComctlLib.StatusBar stabarRTP 
+      Align           =   2  'Align Bottom
+      Height          =   435
+      Left            =   0
+      TabIndex        =   0
+      Top             =   8340
+      Width           =   14295
+      _ExtentX        =   25215
+      _ExtentY        =   767
+      _Version        =   393216
+      BeginProperty Panels {8E3867A5-8586-11D1-B16A-00C0F0283628} 
+         NumPanels       =   10
+         BeginProperty Panel1 {8E3867AB-8586-11D1-B16A-00C0F0283628} 
+            Bevel           =   2
+            Enabled         =   0   'False
+            Object.Width           =   2734
+            MinWidth        =   2734
+            Key             =   "iSys"
+         EndProperty
+         BeginProperty Panel2 {8E3867AB-8586-11D1-B16A-00C0F0283628} 
+            Object.Width           =   3175
+            MinWidth        =   3175
+            Picture         =   "mdifrmRTP.frx":32537
+            Text            =   "Mode"
+            TextSave        =   "Mode"
+            Key             =   "iMode"
+         EndProperty
+         BeginProperty Panel3 {8E3867AB-8586-11D1-B16A-00C0F0283628} 
+            Object.Width           =   2893
+            MinWidth        =   2893
+         EndProperty
+         BeginProperty Panel4 {8E3867AB-8586-11D1-B16A-00C0F0283628} 
+         EndProperty
+         BeginProperty Panel5 {8E3867AB-8586-11D1-B16A-00C0F0283628} 
+         EndProperty
+         BeginProperty Panel6 {8E3867AB-8586-11D1-B16A-00C0F0283628} 
+         EndProperty
+         BeginProperty Panel7 {8E3867AB-8586-11D1-B16A-00C0F0283628} 
+            Object.Width           =   3883
+            MinWidth        =   3883
+         EndProperty
+         BeginProperty Panel8 {8E3867AB-8586-11D1-B16A-00C0F0283628} 
+            Object.Width           =   2822
+            MinWidth        =   2822
+            Picture         =   "mdifrmRTP.frx":32E11
+         EndProperty
+         BeginProperty Panel9 {8E3867AB-8586-11D1-B16A-00C0F0283628} 
+            Text            =   "Version 1.6.8"
+            TextSave        =   "Version 1.6.8"
+         EndProperty
+         BeginProperty Panel10 {8E3867AB-8586-11D1-B16A-00C0F0283628} 
+            Object.Width           =   1058
+            MinWidth        =   1058
+         EndProperty
+      EndProperty
+      BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+         Name            =   "Arial"
+         Size            =   9.75
+         Charset         =   0
+         Weight          =   400
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
+   End
+End
+Attribute VB_Name = "mdifrmRTP"
+Attribute VB_GlobalNameSpace = False
+Attribute VB_Creatable = False
+Attribute VB_PredeclaredId = True
+Attribute VB_Exposed = False
+
+
+
+Option Explicit
+
+Private Sub RefreshCurrDays()
+    Dim strFileName         As String
+    Dim StrData    As String * 30
+    Dim lngRet                As Long
+    Dim iTemp As Integer
+    Dim strTemp As String
+    Dim strID As String
+    
+    Dim yyyy As String
+    Dim mm As String
+    Dim dd As String
+    Dim lDayCheck As Long
+    Dim bCheckValid As Boolean
+    Dim dtStart As Date
+    
+    strFileName = gbSystemPath & "\System\system.cfg"
+    lngRet = GetPrivateProfileString("PARAMETER", "CTGate16", "2015", StrData, 20, strFileName)
+    yyyy = Mid(StrData, 1, 4)
+    lngRet = GetPrivateProfileString("PARAMETER", "CTGate17", "01", StrData, 20, strFileName)
+    mm = Mid(StrData, 1, 2)
+    lngRet = GetPrivateProfileString("PARAMETER", "CTGate18", "01", StrData, 20, strFileName)
+    dd = Mid(StrData, 1, 2)
+    yyyy = CStr(Val(yyyy))
+    mm = CStr(Val(mm))
+    dd = CStr(Val(dd))
+    strTemp = yyyy & "/" & mm & "/" & dd
+    dtStart = CDate(strTemp)
+    iTemp = Date - dtStart
+    If iTemp > 0 And iTemp > gbintCurrDays Then
+        gbintCurrDays = iTemp
+        strTemp = CStr(iTemp)
+        lngRet = WritePrivateProfileString("PARAMETER", "PropertyCoefficient5", strTemp, strFileName)
+    End If
+End Sub
+Private Sub MDIForm_Activate()
+'    frmPlotProcessLog.Label1.Caption = frmPlotProcessLog.CurrRatio
+'    frmPlotProcessLog.CurrRatio = frmPlotProcessLog.CurrRatio + 1
+'    frmPlotProcessLog.Refresh
+'    ShowTitleBar (frmLoginUser.LoginSucceeded)
+End Sub
+
+Private Sub MDIForm_Load()
+    Dim strFilePath As String
+    Dim strDir              As String
+    Dim iTemp As Integer
+    
+    If App.PrevInstance Then  '檢視前一版本
+        'MsgBox "此程式已經在執行中！", 48
+        Unload mdifrmRTP
+        Exit Sub
+    End If
+
+
+    gbSystemPath = App.Path
+    gbSystemFile = gbSystemPath & "\System\system.cfg"
+    
+    frmLogin.LoginSucceeded = False
+    frmLogin.Visible = False
+    
+    
+    Load frmConfiguration
+    Load frmRecipeEdit
+    Load frmPlotProcess
+    Load frmPlotProcessLog
+    Load frmHistory
+    Load frmDiagnosis
+    Load frmDCR
+    Load frmAz1
+    Load frmAz2
+    InitSys
+    
+    
+    frmRecipeEdit.RefreshRecipeGridTitle
+'    stabarRTP.Panels(9).text = "版本 " & App.Major & "." & App.Minor & "." & App.Revision
+ stabarRTP.Panels(9).text = "版本 " & App.Major & "." & App.Minor & "." & "918"
+
+    
+    gblngPreStatus = GB_STATUSBAR_ALARM
+    cIni.Path = gbSystemPath & "\System\system.cfg"
+     
+    StopProc (2)
+End Sub
+
+Private Sub MDIForm_QueryUnload(Cancel As Integer, UnloadMode As Integer)
+    If Kernel.IsRun = 1 Then
+        ShowMessageOK "系統仍在加工階段，請先結束加工!"
+    Else
+        QuestionAns = vbNo
+        ShowMessageYN "確定要結束離開?"
+        If QuestionAns = vbNo Then
+           Cancel = 1
+        Else
+           If Kernel.IsActiveTC1 = 1 And (Para.RtaType = 3 Or Para.RtaType = 5 Or Para.RtaType = 9) Then Call mUSBIO_1.CloseDevice
+           If Kernel.IsActiveTC2 = 1 Then Call mUSBIO_2.CloseDevice
+        End If
+    End If
+End Sub
+
+Private Sub MDIForm_Unload(Cancel As Integer)
+    
+    Unload frmLogin
+    Unload frmRecipeEdit
+    Unload frmPlotProcess
+    Unload frmDiagnosis
+    Unload frmConfiguration
+       
+    End
+End Sub
+
+Private Sub stabarRTP_PanelDblClick(ByVal Panel As MSComctlLib.Panel)
+    If Panel.Index = 1 Then
+        frmLogin.Show
+        frmLogin.ZOrder
+    End If
+End Sub
+
+Public Sub tbrRTP_ButtonClick(ByVal Button As MSComctlLib.Button)
+    Dim iRet As Integer
+    Dim i As Integer
+    Dim j As Integer
+    Dim strTemp As String
+    Dim strTemp1 As String
+          
+    Select Case Button.Index
+        Case 1
+            If Para.UseAutoMode = 0 Then
+            
+                RefreshCurrDays
+                If gbintValidDays < 9999 And gbintCurrDays > gbintValidDays Then
+                    ShowMessageOK "系統連結失敗,請聯絡原廠GTC!"
+                    Exit Sub
+                End If
+                
+                If frmRecipeEdit.blnSave = True Then
+                    QuestionAns = vbNo
+                    ShowMessageYN "配方程序已修改,是否儲存?"
+                    If QuestionAns = vbYes Then
+                        frmRecipeEdit.cmdRecipeSave_Click
+                    End If
+                    frmRecipeEdit.blnSave = False
+                End If
+                
+'                If SysDI.IsReady = 0 Then
+'                    ShowMessageOK "請先開啟電源!"
+'                    Exit Sub
+'                End If
+                          
+                If Para.intMonitorRuns > 0 And Kernel.intCurrMonitorRun >= Para.intMonitorRuns Then
+                    Kernel.intCurrMonitorRun = 0
+                    gbblnShowHint = True
+                    frmStartProcess.lblHint = "已超過監控設定次數,請記得放置監控片!"
+                    frmInputBarcode.lblHint = "已超過監控設定次數,請記得放置監控片!"
+                End If
+                
+                If Para.UseBarcodeServer = 0 Then
+                    If Para.UseCIM = 0 Then
+                    
+                        If frmRecipeEdit.lbRecipeName.Caption = " " Or frmRecipeEdit.lbRecipeName.Caption = "Unknown" Then
+                            ShowMessageOK "請先載入配方程序檔案!"
+                            Exit Sub
+                        End If
+                                 
+                        frmPlotProcess.Show
+                        frmPlotProcess.ZOrder
+                        
+                        If Para.intCycleRuns > 0 Then
+                            QuestionAns = vbYes
+                            Kernel.intCurrCycleRun = Kernel.intCurrCycleRun + 1
+                            Kernel.IsRemoteStart = 0
+                            Kernel.IsAlarm = 0
+                        Else
+                            QuestionAns = vbNo
+                            ShowMessageYN "開始加工?"
+                        End If
+        
+        '                    If frmPlotProcess.txtPN <> "" And gbintActiveModule_PNRecipe = 1 Then
+        '                        If frmPNRecipe.LoadPNRecipe = False Then
+        '                            Exit Sub
+        '                        End If
+        '                    End If
+                        If QuestionAns = vbYes Then
+                            If gbsngLifeLamp > 0 And gbsngUsedLamp >= gbsngLifeLamp Then
+                                ShowAlarmFlash 15
+                            End If
+                            
+                            Call ShowTitleBar(frmLogin.LoginSucceeded)
+                            StartProc
+                        Else
+                            Exit Sub
+                        End If
+                    Else
+                        Kernel.strServerRecipe = ""
+                        If Para.intCIMPort = 0 Or Para.intCIMPort = 2 Then
+                            If frmRecipeEdit.lbRecipeName.Caption = " " Or frmRecipeEdit.lbRecipeName.Caption = "Unknown" Then
+                                ShowMessageOK "監控模式需先載入配方程序!"
+                                Exit Sub
+                            End If
+                        End If
+                                                
+                        If Para.intCIMPort = 1 Then
+                            'If SysDI.IsDoorClose = 1 Then
+                            '    Call StartProcessOnlineRemote
+                            'End If
+                        ElseIf Para.intCIMPort = 2 Then
+                        
+                            QuestionAns = vbNo
+                            frmInputDCR.Show vbModal
+                            'frmInputDCR.ZOrder 0
+                            If QuestionAns = vbYes Then
+                                Call StartProcessOnlineLocal
+                            End If
+                        End If
+                        
+                    End If
+                    
+                Else
+                    QuestionAns = vbNo
+                    frmInputBarcode.Show vbModal
+                    If QuestionAns = vbYes Then
+                        If Para.strTestRunKey <> "" Then
+                            If Kernel.IsNeedTestRun = 1 And Para.strLastRecipe <> Kernel.strServerRecipe & "-" & Para.strTestRunKey Then
+                                ShowMessageOK "閒置時間過長,請先執行空跑程序!"
+                                Exit Sub
+                            End If
+                            
+                            If InStr(Kernel.strServerRecipe, Para.strTestRunKey) = 0 Then
+                                strTemp = Kernel.strServerRecipe & ".rcp"
+                                strTemp1 = Kernel.strServerRecipe & " " & Para.strTestRunKey & ".rcp"
+                                If Para.strLastRecipe <> strTemp And Para.strLastRecipe <> strTemp1 Then
+                                    If strTemp <> Para.strLastRecipe Then
+                                        ShowMessageOK "切換程序前,請先執行空跑程序!"
+                                        Exit Sub
+                                    End If
+                                End If
+                                
+                            End If
+                        End If
+                        
+                        gbstrPNRecipeFile = gbstrRecipeFilePath & Kernel.strServerRecipe & ".rcp"
+                        gbblnPNLoad = True
+                        frmRecipeEdit.cmdRecipeOpen_Click
+                        gbblnPNLoad = False
+                        Call ShowTitleBar(frmLogin.LoginSucceeded)
+                        StartProc
+                    End If
+                End If
+            Else
+                If Kernel.IsRemoteStart = 1 Then
+                    Kernel.IsRemoteStart = 0
+                    gbblnPNLoad = True
+                    frmRecipeEdit.cmdRecipeOpen_Click
+                    gbblnPNLoad = False
+                    Call ShowTitleBar(frmLogin.LoginSucceeded)
+                    StartProc
+                End If
+            End If
+        Case 2
+            StopProc (2)
+            
+        Case 3
+            frmPlotProcess.Show
+            frmPlotProcess.ZOrder
+        Case 4
+            frmRecipeEdit.cmdRecipeOpen_Click
+        Case 5
+            frmRecipeEdit.Show
+            frmRecipeEdit.ZOrder
+        Case 6
+            frmDiagnosis.Show
+            frmDiagnosis.ZOrder
+        Case 7
+            frmConfiguration.Show
+            frmConfiguration.ZOrder
+        Case 8
+            frmPlotProcessLog.Show
+            frmPlotProcessLog.ZOrder
+            frmPlotProcessLog.fraProcessHistory.Visible = True
+            frmPlotProcessLog.fraProcessHistory.ZOrder
+        Case 9
+            frmHistory.Show
+            frmHistory.ZOrder
+        Case 10
+            frmLoginUser.IsLogout = True
+            frmLoginUser.Show
+            frmLoginUser.ZOrder
+        Case 11
+            AlarmFlashClose
+        Case 12
+            frmAbout.Show
+            frmAbout.ZOrder
+            frmLogin.LoginSucceeded = False
+        Case 13
+            QuestionAns = vbNo
+            ShowMessageYN "確定要結束離開?"
+            If QuestionAns = vbYes Then
+                gbbnlPC_STOP = True
+                frmConfiguration.tmrAIO.Enabled = False
+                frmConfiguration.tmrDIO.Enabled = False
+                ResetDO
+                ResetAO
+                SetDO gblngDO_PC_Check1, True
+                SetDO gblngDO_PC_Check2, True
+                  
+                If (Para.RtaType = 1 Or Para.RtaType = 3) Then
+                    Ixud_DriverClose
+                End If
+                If (Para.RtaType = 3 Or Para.RtaType = 5) And Kernel.IsActiveTC1 = 1 Then
+                    mUSBIO_1.CloseDevice
+                    If Para.UseMTC = 1 And Kernel.IsActiveTC2 = 1 Then
+                        mUSBIO_2.CloseDevice
+                        
+                    End If
+                End If
+                
+                If Para.RtaType = 9 Then
+                    If Kernel.IsActiveTC1 = 1 Then mUSBIO_1.CloseDevice
+                    If Kernel.IsActiveTC2 = 1 Then mUSBIO_2.CloseDevice
+                    
+                End If
+                If (Para.RtaType = 5 Or Para.RtaType = 6 Or Para.RtaType = 8 Or Para.RtaType = 9) And Kernel.IsActiveIO = 1 Then
+                    FRB_DriverClose
+                End If
+                
+                If Para.RtaType = 7 Or Para.RtaType = 8 Then
+                    frmTCP.CloseTCP
+                End If
+    
+                If Para.RtaType = 9 Then
+                    frmAz1.CloseTCP
+                    frmAz2.CloseTCP
+                    
+                End If
+                
+                On Error GoTo ERRCOM:
+                If Para.UseCT = 1 Then
+                    frmConfiguration.MSComm1.PortOpen = False
+                End If
+                
+                
+                End
+            End If
+            
+    End Select
+    Exit Sub
+ERRCOM:
+    End
+End Sub
+
+'Aries Add two function for online remote/local
+Public Sub StartProcessOnlineRemote()
+    frmPlotProcess.txtPN.text = CurrProc.strCaseID
+    frmPlotProcess.txtID2.text = CurrProc.strWaferID(0)
+    Kernel.strBarcodeID = CurrProc.strWaferID(0)
+    gbstrPNRecipeFile = gbstrRecipeFilePath & Kernel.strServerRecipe
+    gbblnPNLoad = True
+    frmRecipeEdit.cmdRecipeOpen_Click
+    gbblnPNLoad = False
+    Call ShowTitleBar(frmLogin.LoginSucceeded)
+    StartProc
+End Sub
+
+Public Sub StartProcessOnlineLocal()
+    frmPlotProcess.txtPN.text = CurrProc.strCaseID
+    frmPlotProcess.txtID2.text = CurrProc.strWaferID(0)
+    Kernel.strBarcodeID = CurrProc.strWaferID(0)
+    gbstrPNRecipeFile = gbstrRecipeFilePath & Kernel.strServerRecipe
+    gbblnPNLoad = True
+    frmRecipeEdit.cmdRecipeOpen_Click
+    gbblnPNLoad = False
+    Call ShowTitleBar(frmLogin.LoginSucceeded)
+    StartProc
+End Sub
+
+Public Sub ShowStatus()
+    'Aries Modify 3 mode
+    If Para.UseAutoMode = 0 Then
+        'stabarRTP.Panels(2).Text = IIf(Para.UseBarcodeServer = 0 And Para.intCIMPort = 0, "離線模式", "連線模式")
+        If (Para.UseBarcodeServer = 0 And Para.intCIMPort = 0) Then stabarRTP.Panels(2).text = "離線模式"
+        If (Para.UseBarcodeServer = 0 And Para.intCIMPort = 1) Then stabarRTP.Panels(2).text = "遠端模式"
+        If (Para.UseBarcodeServer = 0 And Para.intCIMPort = 2) Then stabarRTP.Panels(2).text = "監視模式"
+    Else
+        stabarRTP.Panels(2).text = "自動模式"
+    End If
+    
+    If SysDI.IsReady = 0 Then
+        stabarRTP.Panels(3).text = "未備妥-停止"
+    Else
+        stabarRTP.Panels(3).text = IIf(Kernel.IsRun = 0, "備妥-停止", "備妥-運轉中")
+    End If
+    stabarRTP.Panels(4).text = "登入者=" & frmLoginUser.txtUserName
+    stabarRTP.Panels(5).text = IIf(SysDI.IsDoorClose = 0, "開門狀態", "關門狀態")
+    stabarRTP.Panels(6).text = Kernel.strCurrStep
+    
+    stabarRTP.Panels(10).text = IIf(Para.intCycleRuns > 0, CStr(Kernel.intCurrCycleRun) & "/" & CStr(Para.intCycleRuns), "")
+        
+    If Para.UseCover Then
+        stabarRTP.Panels(7).text = IIf(SysDI.IsCoverDown = 1, "蓋版-下位", "蓋版-上位")
+    End If
+    
+    
+    If Kernel.IsRun = 1 Or Kernel.IsAlarm > 0 Then
+        tbrRTP.Buttons("iRun").Enabled = False
+    Else
+        If Kernel.IsPurge = 0 Then
+            tbrRTP.Buttons("iRun").Enabled = True
+        End If
+    End If
+       
+    
+End Sub
+
+Public Sub ShowTitleBar(blnIsTrue As Boolean)
+    tbrRTP.Buttons("iRun").Enabled = blnIsTrue
+    tbrRTP.Buttons("iConfiguration").Enabled = blnIsTrue
+    tbrRTP.Buttons("iDiagnosis").Enabled = blnIsTrue
+    tbrRTP.Buttons("iChart Log").Enabled = blnIsTrue
+    tbrRTP.Buttons("iHistory").Enabled = blnIsTrue
+    tbrRTP.Buttons("iRecipe").Enabled = blnIsTrue
+    tbrRTP.Buttons("iOpen").Enabled = blnIsTrue
+    tbrRTP.Buttons("iLogout").Enabled = blnIsTrue
+    tbrRTP.Buttons("iAbout").Enabled = blnIsTrue
+    tbrRTP.Buttons("iExit").Enabled = blnIsTrue
+    tbrRTP.Buttons("iAlarmReset").Enabled = blnIsTrue
+    'frmRecipeEdit.cmdRecipeSave.Enabled = blnIsTrue
+    Select Case gbintLoginRight
+        Case 2
+        tbrRTP.Buttons("iRecipe").Enabled = True
+        tbrRTP.Buttons("iChart Log").Enabled = True
+        tbrRTP.Buttons("iHistory").Enabled = True
+        
+        Case 3
+            tbrRTP.Buttons("iConfiguration").Enabled = False
+            tbrRTP.Buttons("iRecipe").Enabled = True
+            tbrRTP.Buttons("iChart Log").Enabled = True
+            tbrRTP.Buttons("iHistory").Enabled = True
+'            tbrRTP.Buttons("iRecipe").Enabled = False
+            
+        Case 4
+            tbrRTP.Buttons("iConfiguration").Enabled = False
+            'frmRecipeEdit.cmdRecipeSave.Enabled = False
+            tbrRTP.Buttons("iRecipe").Enabled = False
+            tbrRTP.Buttons("iDiagnosis").Enabled = False
+            tbrRTP.Buttons("iAlarmReset").Enabled = False
+    End Select
+    tbrRTP.Buttons("iAbout").Visible = False
+End Sub
+
+Private Sub tmrTime_Timer()
+    stabarRTP.Panels(8) = Format(Time, "hh:mm:ss")
+    
+End Sub

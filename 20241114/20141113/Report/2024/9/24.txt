@@ -1,0 +1,4 @@
+[Report]
+CurrReportIndex=2
+1=09:30:04,09:30:07,Broken,漏率測試.rcp,,,
+2=09:30:13,09:30:16,Broken,漏率測試.rcp,,,

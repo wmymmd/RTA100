@@ -1,0 +1,530 @@
+[COMMENT]
+RecordTime=2022/3/30 ¤U¤È 04:22:29
+InputDevice=1
+InputObject=0
+ColumnName=Index,Time,Intensity,TC,Pump,Gas1~4,Pressure,MTC1~5,Power1~5,O2
+PumpDownTime=0
+[STEP 1]
+ACTION=Idle
+TEMP=0
+TIME=5
+N2=0
+APC=0
+O2=0
+GH=0
+N5=0
+Pump=0
+[STEP 2]
+ACTION=Idle
+TEMP=0
+TIME=5
+N2=0
+APC=0
+O2=0
+GH=0
+N5=0
+Pump=0
+[STEP 3]
+ACTION=Ramp up
+TEMP=100
+TIME=20
+N2=0
+APC=0
+O2=0
+GH=0
+N5=0
+Pump=0
+[STEP 4]
+ACTION=Hold
+TEMP=100
+TIME=30
+N2=0
+APC=0
+O2=0
+GH=0
+N5=0
+Pump=0
+[STEP 5]
+ACTION=Ramp up
+TEMP=300
+TIME=40
+N2=0
+APC=0
+O2=0
+GH=0
+N5=0
+Pump=0
+[STEP 6]
+ACTION=Hold
+TEMP=300
+TIME=240
+N2=0
+APC=0
+O2=0
+GH=0
+N5=0
+Pump=0
+[STEP 7]
+ACTION=Idle
+TEMP=0
+TIME=31
+N2=0
+APC=0
+O2=0
+GH=0
+N5=0
+Pump=0
+[STEP 8]
+ACTION=Stop
+TEMP=0
+TIME=0
+N2=0
+APC=0
+O2=0
+GH=0
+N5=0
+Pump=0
+[STEP 9]
+ACTION=Stop
+TEMP=0
+TIME=0
+N2=0
+APC=0
+O2=0
+GH=0
+N5=0
+Pump=0
+[STEP 10]
+ACTION=Stop
+TEMP=0
+TIME=0
+N2=0
+APC=0
+O2=0
+GH=0
+N5=0
+Pump=0
+[STEP 11]
+ACTION=Stop
+TEMP=0
+TIME=0
+N2=0
+APC=0
+O2=0
+GH=0
+N5=0
+Pump=0
+[STEP 12]
+ACTION=Stop
+TEMP=0
+TIME=0
+N2=0
+APC=0
+O2=0
+GH=0
+N5=0
+Pump=0
+[STEP 13]
+ACTION=Stop
+TEMP=0
+TIME=0
+N2=0
+APC=0
+O2=0
+GH=0
+N5=0
+Pump=0
+[STEP 14]
+ACTION=Stop
+TEMP=0
+TIME=0
+N2=0
+APC=0
+O2=0
+GH=0
+N5=0
+Pump=0
+[STEP 15]
+ACTION=Stop
+TEMP=0
+TIME=0
+N2=0
+APC=0
+O2=0
+GH=0
+N5=0
+Pump=0
+[STEP 16]
+ACTION=Stop
+TEMP=0
+TIME=0
+N2=0
+APC=0
+O2=0
+GH=0
+N5=0
+Pump=0
+[STEP 17]
+ACTION=Stop
+TEMP=0
+TIME=0
+N2=0
+APC=0
+O2=0
+GH=0
+N5=0
+Pump=0
+[STEP 18]
+ACTION=Stop
+TEMP=0
+TIME=0
+N2=0
+APC=0
+O2=0
+GH=0
+N5=0
+Pump=0
+[STEP 19]
+ACTION=Stop
+TEMP=0
+TIME=0
+N2=0
+APC=0
+O2=0
+GH=0
+N5=0
+Pump=0
+[STEP 20]
+ACTION=Stop
+TEMP=0
+TIME=0
+N2=0
+APC=0
+O2=0
+GH=0
+N5=0
+Pump=0
+[STEP 21]
+ACTION=Stop
+TEMP=0
+TIME=0
+N2=0
+APC=0
+O2=0
+GH=0
+N5=0
+Pump=0
+[STEP 22]
+ACTION=Stop
+TEMP=0
+TIME=0
+N2=0
+APC=0
+O2=0
+GH=0
+N5=0
+Pump=0
+[STEP 23]
+ACTION=Stop
+TEMP=0
+TIME=0
+N2=0
+APC=0
+O2=0
+GH=0
+N5=0
+Pump=0
+[STEP 24]
+ACTION=Stop
+TEMP=0
+TIME=0
+N2=0
+APC=0
+O2=0
+GH=0
+N5=0
+Pump=0
+[STEP 25]
+ACTION=Stop
+TEMP=0
+TIME=0
+N2=0
+APC=0
+O2=0
+GH=0
+N5=0
+Pump=0
+[STEP 26]
+ACTION=Stop
+TEMP=0
+TIME=0
+N2=0
+APC=0
+O2=0
+GH=0
+N5=0
+Pump=0
+[STEP 27]
+ACTION=Stop
+TEMP=0
+TIME=0
+N2=0
+APC=0
+O2=0
+GH=0
+N5=0
+Pump=0
+[STEP 28]
+ACTION=Stop
+TEMP=0
+TIME=0
+N2=0
+APC=0
+O2=0
+GH=0
+N5=0
+Pump=0
+[STEP 29]
+ACTION=Stop
+TEMP=0
+TIME=0
+N2=0
+APC=0
+O2=0
+GH=0
+N5=0
+Pump=0
+[STEP 30]
+ACTION=Stop
+TEMP=0
+TIME=0
+N2=0
+APC=0
+O2=0
+GH=0
+N5=0
+Pump=0
+[STEP 31]
+ACTION=Stop
+TEMP=0
+TIME=0
+N2=0
+APC=0
+O2=0
+GH=0
+N5=0
+Pump=0
+[STEP 32]
+ACTION=Stop
+TEMP=0
+TIME=0
+N2=0
+APC=0
+O2=0
+GH=0
+N5=0
+Pump=0
+[STEP 33]
+ACTION=Stop
+TEMP=0
+TIME=0
+N2=0
+APC=0
+O2=0
+GH=0
+N5=0
+Pump=0
+[STEP 34]
+ACTION=Stop
+TEMP=0
+TIME=0
+N2=0
+APC=0
+O2=0
+GH=0
+N5=0
+Pump=0
+[STEP 35]
+ACTION=Stop
+TEMP=0
+TIME=0
+N2=0
+APC=0
+O2=0
+GH=0
+N5=0
+Pump=0
+[STEP 36]
+ACTION=Stop
+TEMP=0
+TIME=0
+N2=0
+APC=0
+O2=0
+GH=0
+N5=0
+Pump=0
+[STEP 37]
+ACTION=Stop
+TEMP=0
+TIME=0
+N2=0
+APC=0
+O2=0
+GH=0
+N5=0
+Pump=0
+[STEP 38]
+ACTION=Stop
+TEMP=0
+TIME=0
+N2=0
+APC=0
+O2=0
+GH=0
+N5=0
+Pump=0
+[STEP 39]
+ACTION=Stop
+TEMP=0
+TIME=0
+N2=0
+APC=0
+O2=0
+GH=0
+N5=0
+Pump=0
+[STEP 40]
+ACTION=Stop
+TEMP=0
+TIME=0
+N2=0
+APC=0
+O2=0
+GH=0
+N5=0
+Pump=0
+[STEP 41]
+ACTION=Stop
+TEMP=0
+TIME=0
+N2=0
+APC=0
+O2=0
+GH=0
+N5=0
+Pump=0
+[STEP 42]
+ACTION=Stop
+TEMP=0
+TIME=0
+N2=0
+APC=0
+O2=0
+GH=0
+N5=0
+Pump=0
+[STEP 43]
+ACTION=Stop
+TEMP=0
+TIME=0
+N2=0
+APC=0
+O2=0
+GH=0
+N5=0
+Pump=0
+[STEP 44]
+ACTION=Stop
+TEMP=0
+TIME=0
+N2=0
+APC=0
+O2=0
+GH=0
+N5=0
+Pump=0
+[STEP 45]
+ACTION=Stop
+TEMP=0
+TIME=0
+N2=0
+APC=0
+O2=0
+GH=0
+N5=0
+Pump=0
+[STEP 46]
+ACTION=Stop
+TEMP=0
+TIME=0
+N2=0
+APC=0
+O2=0
+GH=0
+N5=0
+Pump=0
+[STEP 47]
+ACTION=Stop
+TEMP=0
+TIME=0
+N2=0
+APC=0
+O2=0
+GH=0
+N5=0
+Pump=0
+[STEP 48]
+ACTION=Stop
+TEMP=0
+TIME=0
+N2=0
+APC=0
+O2=0
+GH=0
+N5=0
+Pump=0
+[STEP 49]
+ACTION=Stop
+TEMP=0
+TIME=0
+N2=0
+APC=0
+O2=0
+GH=0
+N5=0
+Pump=0
+[STEP 50]
+ACTION=Stop
+TEMP=0
+TIME=0
+N2=0
+APC=0
+O2=0
+GH=0
+N5=0
+Pump=0
+[COFFICIENT]
+IntensityWeightD1=0
+IntensityWeightD2=0
+IntensityWeightD3=0
+IntensityWeightD4=0.2
+IntensityWeightD5=0
+IntensityWeightS1=0
+IntensityWeightS2=0
+IntensityWeightS3=0
+IntensityWeightS4=0
+IntensityWeightS5=0
+[CONTROL_LOOP]
+Proportional=1
+Proportional2=1
+Integrnal=0
+Integral2=0
+Derivational=0
+Factor1=0
+Factor2=0
+InputDevice=1
+Overshoot=30
+[PROCESS_RECORD]
+0=1531,0,22,0,0,0,0,0,0,760,0,21.2,21,21.3,21.8,0,0,0,0,0,0,0,0,0
+1=2531,0,22,0,0,0,0,0,0,760,0,21.2,21,21.3,21.8,0,0,0,0,0,0,0,0,0

@@ -1,0 +1,9 @@
+[Report]
+CurrReportIndex=7
+1=20:24:44,20:24:45,Broken,IDLE5MIN.RCP,,,
+2=20:25:42,20:25:42,Broken,IDLE5MIN.RCP,,,
+3=20:26:09,20:26:10,Broken,IDLE5MIN.RCP,,,
+4=20:28:02,20:28:47,Broken,IDLE5MIN.RCP,,,
+5=20:35:29,20:35:37,Broken,IDLE5MIN.RCP,,,
+6=20:41:30,20:46:31,OK,Idle5min.rcp,,,
+7=21:00:15,21:02:46,OK,Idle5min.rcp,,,

@@ -1,0 +1,15 @@
+[Report]
+CurrReportIndex=13
+1=16:07:44,16:21:36,OK,Sputter.rcp,,,
+2=17:12:19,17:24:28,Broken,heating sic-1.rcp,,,
+3=17:31:40,18:30:06,OK,heating sic-1.rcp,,,
+4=18:37:46,19:36:13,OK,heating sic-1.rcp,,,
+5=20:33:25,20:47:10,OK,Sputter4.7.rcp,,,
+6=21:06:33,21:10:50,Broken,Sputter4.7.rcp,,,
+7=21:15:36,21:21:44,Broken,Sputter4.7.rcp,,,
+8=21:26:55,21:33:02,Broken,Sputter4.7.rcp,,,
+9=21:40:12,21:43:41,Broken,Sputter4.7.rcp,,,
+10=21:49:29,21:55:25,Broken,Sputter4.7.rcp,,,
+11=22:01:20,22:10:51,Broken,Sputter4.7.rcp,,,
+12=22:40:40,22:46:46,Broken,GTO-JD.rcp,,,
+13=23:14:15,23:20:15,Broken,GTO-JD.rcp,,,

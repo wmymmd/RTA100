@@ -1,0 +1,12 @@
+[Report]
+CurrReportIndex=10
+1=13:35:18,13:35:49,OK,test400id1.rcp,,,CID557
+2=13:36:21,13:36:52,OK,test400id2.rcp,,,CID557
+3=15:02:21,15:02:53,OK,test400id1.rcp,,,CID999
+4=15:17:17,15:17:48,OK,test400id1.rcp,,,CID501
+5=15:19:30,15:20:01,OK,test400id1.rcp,,,CID502
+6=15:20:38,15:20:45,Broken,test400id2.rcp,,,CID502
+7=15:32:07,15:32:14,Broken,test400id1.rcp,,,CID5541
+8=15:34:15,15:34:47,OK,test400id1.rcp,,,CID5542
+9=15:35:46,15:36:17,OK,test400id1.rcp,,,CID5543
+10=15:48:59,15:49:31,OK,test400id1.rcp,,,CID5543

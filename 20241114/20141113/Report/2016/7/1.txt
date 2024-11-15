@@ -1,0 +1,9 @@
+[Report]
+CurrReportIndex=7
+1=15:19:09,15:19:15,Broken,Sputter7.1.rcp,,,
+2=15:19:18,15:26:01,Broken,Sputter7.1.rcp,,,
+3=15:30:41,15:48:45,OK,Sputter7.1.rcp,,,
+4=15:48:52,16:06:55,OK,Sputter7.1.rcp,,,
+5=16:07:02,16:25:05,OK,Sputter7.1.rcp,,,
+6=16:31:28,16:37:14,Broken,Sputter2.rcp,,,
+7=16:43:32,16:49:28,Broken,Sputter3.rcp,,,

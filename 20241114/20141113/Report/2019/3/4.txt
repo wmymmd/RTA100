@@ -1,0 +1,10 @@
+[Report]
+CurrReportIndex=8
+1=12:20:32,12:20:44,Broken,All calibration-1.rcp,,,
+2=12:21:34,12:44:03,Broken,All calibration-1.rcp,,,
+3=13:04:17,13:04:43,Broken,All calibration-1.rcp,,,
+4=13:09:45,13:33:22,Broken,All calibration-1.rcp,,,
+5=13:41:10,13:41:43,Broken,All calibration-1.rcp,,,
+6=13:45:26,14:07:54,Broken,All calibration-1.rcp,,,
+7=14:17:06,14:23:44,Broken,h500r10 J.rcp,,,
+8=14:32:21,14:37:21,Broken,h500r10 J-2.rcp,,,
