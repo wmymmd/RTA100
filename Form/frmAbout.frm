@@ -186,7 +186,7 @@ End Sub
 
 Private Sub cmdOK_Click()
    '
-    Unload Me
+'    Unload Me
 End Sub
 
 Private Sub Form_Load()
