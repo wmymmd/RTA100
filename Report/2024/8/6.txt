@@ -1,0 +1,3 @@
+[Report]
+CurrReportIndex=1
+1=09:04:02,09:04:16,Broken,บ|ฒvด๚ธี.rcp,,,

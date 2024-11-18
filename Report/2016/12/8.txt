@@ -1,0 +1,8 @@
+[Report]
+CurrReportIndex=6
+1=01:56:59,01:57:02,Broken,h55r10.rcp,,,
+2=01:57:50,01:57:54,Broken,heating sic.rcp,,,
+3=01:58:00,01:58:01,Broken,h55r10.rcp,,,
+4=01:58:49,01:58:51,Broken,h55r10.rcp,,,
+5=01:59:50,01:59:52,Broken,h55r10.rcp,,,
+6=02:01:04,02:01:51,Broken,h55r10.rcp,,,

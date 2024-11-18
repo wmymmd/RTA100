@@ -1,0 +1,6 @@
+[Report]
+CurrReportIndex=4
+1=10:24:33,10:24:40,Broken,簗瞯代刚.rcp,,,
+2=10:27:14,10:27:23,Broken,簗瞯代刚.rcp,,,
+3=10:27:26,10:27:35,Broken,簗瞯代刚.rcp,,,
+4=13:05:58,13:06:02,Broken,簗瞯代刚.rcp,,,
