@@ -1,4 +1,4 @@
-frmPlotProcess = -115, 33, 921, 560, , -56, 80, 930, 656, C
+frmPlotProcess = -115, 33, 921, 560, Z, -56, 80, 930, 656, C
 mdlPlotTable = 52, 52, 1038, 627, 
 mdlWindowsAPI = 234, 234, 1270, 761, 
 mdlPIDControl = 52, 52, 1088, 579, 

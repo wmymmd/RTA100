@@ -654,6 +654,16 @@ Public Sub sendData(data() As Byte, portName As String)
 '    Loop
 End Sub
 
+Private Function WaitForResponse(comm As MSComm) As Boolean
+    Dim startTime As Single
+    Dim timeout As Single
+    timeout = 5
+    
+    startTime = Timer
+    Do While Timer - startTime < timeout
+        If comm.InBufferCount > 0 Then
+            
+End Function
 
 Private Sub MSCommSCR_OnComm()
     HandleCommEvent MSCommSCR
@@ -743,7 +753,7 @@ Public Sub ReadConfig()
     Dim BaudRate As Long
     Dim DataBits As Long
     Dim StopBits As Long
-    Dim Timeout As Long
+    Dim timeout As Long
     
     InitializeDeviceInfo
     configFileName = gbSystemPath & "\Config\ModbusRtu.ini"
@@ -765,7 +775,7 @@ Public Sub ReadConfig()
             BaudRate = Val(ReadIniValue(configFileName, deviceSection, "BaudRate", "0"))
             DataBits = Val(ReadIniValue(configFileName, deviceSection, "DataBits", "0"))
             StopBits = Val(ReadIniValue(configFileName, deviceSection, "StopBits", "0"))
-            Timeout = Val(ReadIniValue(configFileName, deviceSection, "Timeout", "0"))
+            timeout = Val(ReadIniValue(configFileName, deviceSection, "Timeout", "0"))
     
             Dim deviceDetails As Object
             Set deviceDetails = CreateObject("Scripting.Dictionary")
@@ -775,7 +785,7 @@ Public Sub ReadConfig()
             deviceDetails.Add "BaudRate", BaudRate
             deviceDetails.Add "DataBits", DataBits
             deviceDetails.Add "StopBits", StopBits
-            deviceDetails.Add "Timeout", Timeout
+            deviceDetails.Add "Timeout", timeout
     
             deviceInfo.Add CStr(deviceIndex + 1), deviceDetails
     End If
@@ -921,7 +931,7 @@ ERRLINE:
 '    MsgBox "Modbus DisConnect Fail!"
 End Function
 
-Public Sub WriteConfig(DeviceName As String, IsUsed As Integer, Port As String, BaudRate As String, DataBits As String, StopBits As String, Timeout As String)
+Public Sub WriteConfig(DeviceName As String, IsUsed As Integer, Port As String, BaudRate As String, DataBits As String, StopBits As String, timeout As String)
     Dim configFileName As String
     Dim fileContent As String
     Dim lines() As String
@@ -961,7 +971,7 @@ Public Sub WriteConfig(DeviceName As String, IsUsed As Integer, Port As String, 
                 lines(i + 4) = "BaudRate=" & BaudRate
                 lines(i + 5) = "DataBits=" & DataBits
                 lines(i + 6) = "StopBits=" & StopBits
-                lines(i + 7) = "Timeout=" & Timeout
+                lines(i + 7) = "Timeout=" & timeout
                 deviceFound = True
                 Exit For
                 End If
@@ -985,7 +995,7 @@ Public Sub WriteConfig(DeviceName As String, IsUsed As Integer, Port As String, 
         lines(UBound(lines) - 3) = "BaudRate=" & BaudRate
         lines(UBound(lines) - 2) = "DataBits=" & DataBits
         lines(UBound(lines) - 1) = "StopBits=" & StopBits
-        lines(UBound(lines)) = "Timeout=" & Timeout
+        lines(UBound(lines)) = "Timeout=" & timeout
     End If
     
     

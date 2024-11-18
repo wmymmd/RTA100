@@ -84,3 +84,4 @@
 2024/11/14 下午 02:59:12: AZ2 Connect Error6
 2024/11/14 下午 03:01:09: AZ2 Connect Error6
 2024/11/14 下午 04:48:49: AZ2 Connect Error6
+2024/11/18 下午 03:11:18: AZ2 Connect Error6
