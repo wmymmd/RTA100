@@ -296,7 +296,7 @@ Public gbintFinishedBeep As Integer
 Public gbintFinishedLight As Integer
 Public gbintCycleRun As Integer
 Public gbsngGaugeValue As Single
-
+Public gbsngGaugeValue2 As Single
 '120822 Josh
 Public gbintLoginRight As Integer
 Public gbstrAdminPW As String
@@ -694,6 +694,7 @@ Public Type KernelType
     strCurrRecipeFile As String
     strCurrLogFile As String
     sngPressure As Single
+    sngPressure2 As Single
     sngOxygen As Single
     intOverCT(60) As Integer
     intUnderCT(60) As Integer
@@ -862,6 +863,7 @@ Public GbHoldState As Boolean
 Public GbLogRcdCount As Long
 Public TempOffset() As Single
 Public GbShowDebugButton As Integer
+Public GbTestMode_Switch As Integer
 Public HoldCount As Integer
 
 

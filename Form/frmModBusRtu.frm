@@ -602,7 +602,6 @@ Public Sub sendData(data() As Byte, portName As String)
     Dim crc() As Byte
     Dim sendData() As Byte
     Dim i As Integer
-    Dim retryCount As Integer
     
         crc = Modbus_CRC(data)
     
@@ -613,34 +612,29 @@ Public Sub sendData(data() As Byte, portName As String)
          For i = LBound(crc) To UBound(crc)
             sendData(UBound(data) + i) = crc(i)
         Next i
-        retryCount = 3
-        For i = 1 To retryCount
-            Select Case portName
-                Case "SCR"
-                     If MSCommSCR.PortOpen Then
-                        MSCommSCR.Output = sendData
-                    Else
-                        MsgBox "Serial not open!"
-                    End If
-                Case "O2 Sensor"
-                     If MSCommO2SenSor.PortOpen Then
-                        MSCommO2SenSor.Output = sendData
-                    Else
-                        MsgBox "Serial not open!"
-                    End If
-                Case "Lamp"
-                     If MSCommLamp.PortOpen Then
-                        MSCommLamp.Output = sendData
-                    Else
-                        MsgBox "Serial not open!"
-                    End If
-                Case Else
-                    MsgBox "Invalid Serial Port!"
-            End Select
-            If i = retryCount Then
-                MsgBox "Failed to receive response after " & retryCount & " attempts."
-            End If
-    Next i
+        Select Case portName
+            Case "SCR"
+                 If MSCommSCR.PortOpen Then
+                    MSCommSCR.Output = sendData
+                Else
+                    MsgBox "Serial not open!"
+                End If
+            Case "O2 Sensor"
+                 If MSCommO2SenSor.PortOpen Then
+                    MSCommO2SenSor.Output = sendData
+                Else
+                    MsgBox "Serial not open!"
+                End If
+            Case "Lamp"
+                 If MSCommLamp.PortOpen Then
+                    MSCommLamp.Output = sendData
+                Else
+                    MsgBox "Serial not open!"
+                End If
+            Case Else
+                MsgBox "Invalid Serial Port!"
+        End Select
+        
 '    DataReceived = False
 '    Dim startTime As Single
 '    startTime = Timer
@@ -1080,10 +1074,10 @@ Private Sub SCRAddress()
     gbsngSCRAddress(9) = &HA
     gbsngSCRAddress(10) = &HB
     gbsngSCRAddress(11) = &HC
-    gbsngSCRAddress(12) = &HD
-    gbsngSCRAddress(13) = &HE
-    gbsngSCRAddress(14) = &HF
-    gbsngSCRAddress(15) = &H16
-    gbsngSCRAddress(16) = &H17
+'    gbsngSCRAddress(12) = &HD
+'    gbsngSCRAddress(13) = &HE
+'    gbsngSCRAddress(14) = &HF
+'    gbsngSCRAddress(15) = &H16
+'    gbsngSCRAddress(16) = &H17
     
 End Sub

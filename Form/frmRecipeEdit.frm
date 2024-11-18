@@ -69,41 +69,41 @@ Begin VB.Form frmRecipeEdit
       TabCaption(1)   =   "安全設定"
       TabPicture(1)   =   "frmRecipeEdit.frx":001C
       Tab(1).ControlEnabled=   0   'False
-      Tab(1).Control(0)=   "txtIntLimit"
-      Tab(1).Control(1)=   "txtOvershoot"
-      Tab(1).Control(2)=   "txtUndershoot"
-      Tab(1).Control(3)=   "lbName(137)"
+      Tab(1).Control(0)=   "Label3"
+      Tab(1).Control(1)=   "lbUnits"
+      Tab(1).Control(2)=   "lbName(3)"
+      Tab(1).Control(3)=   "lbName(7)"
       Tab(1).Control(4)=   "Label2"
-      Tab(1).Control(5)=   "lbName(7)"
-      Tab(1).Control(6)=   "lbName(3)"
-      Tab(1).Control(7)=   "lbUnits"
-      Tab(1).Control(8)=   "Label3"
+      Tab(1).Control(5)=   "lbName(137)"
+      Tab(1).Control(6)=   "txtUndershoot"
+      Tab(1).Control(7)=   "txtOvershoot"
+      Tab(1).Control(8)=   "txtIntLimit"
       Tab(1).ControlCount=   9
       TabCaption(2)   =   "開關控制"
       TabPicture(2)   =   "frmRecipeEdit.frx":0038
       Tab(2).ControlEnabled=   0   'False
-      Tab(2).Control(0)=   "Frame2"
+      Tab(2).Control(0)=   "fraDoor"
       Tab(2).Control(1)=   "Frame3"
-      Tab(2).Control(2)=   "fraDoor"
+      Tab(2).Control(2)=   "Frame2"
       Tab(2).ControlCount=   3
       TabCaption(3)   =   "APC控制"
       TabPicture(3)   =   "frmRecipeEdit.frx":0054
       Tab(3).ControlEnabled=   0   'False
-      Tab(3).Control(0)=   "txtAPC_P"
-      Tab(3).Control(1)=   "txtAPC_I"
-      Tab(3).Control(2)=   "txtOverPressure"
-      Tab(3).Control(3)=   "lbName(159)"
-      Tab(3).Control(4)=   "lbName(158)"
-      Tab(3).Control(5)=   "lbName(21)"
+      Tab(3).Control(0)=   "lbName(21)"
+      Tab(3).Control(1)=   "lbName(158)"
+      Tab(3).Control(2)=   "lbName(159)"
+      Tab(3).Control(3)=   "txtOverPressure"
+      Tab(3).Control(4)=   "txtAPC_I"
+      Tab(3).Control(5)=   "txtAPC_P"
       Tab(3).ControlCount=   6
       TabCaption(4)   =   "卡控"
       TabPicture(4)   =   "frmRecipeEdit.frx":0070
       Tab(4).ControlEnabled=   0   'False
-      Tab(4).Control(0)=   "Frame6"
-      Tab(4).Control(1)=   "Frame5"
+      Tab(4).Control(0)=   "lbName(252)"
+      Tab(4).Control(1)=   "txtPrepareIndex"
       Tab(4).Control(2)=   "Frame4"
-      Tab(4).Control(3)=   "txtPrepareIndex"
-      Tab(4).Control(4)=   "lbName(252)"
+      Tab(4).Control(3)=   "Frame5"
+      Tab(4).Control(4)=   "Frame6"
       Tab(4).ControlCount=   5
       Begin VB.Frame Frame6 
          Caption         =   "高壓允許範圍"
@@ -1235,29 +1235,29 @@ Begin VB.Form frmRecipeEdit
          TabCaption(2)   =   "Multi-Loop"
          TabPicture(2)   =   "frmRecipeEdit.frx":91210
          Tab(2).ControlEnabled=   0   'False
-         Tab(2).Control(0)=   "tabSCR"
-         Tab(2).Control(1)=   "fraLoop(5)"
-         Tab(2).Control(2)=   "fraLoop(4)"
-         Tab(2).Control(3)=   "fraLoop(3)"
-         Tab(2).Control(4)=   "fraLoop(2)"
-         Tab(2).Control(5)=   "fraLoop(1)"
-         Tab(2).Control(6)=   "chkUseMultiLoop"
-         Tab(2).Control(7)=   "fraLoop(0)"
+         Tab(2).Control(0)=   "fraLoop(0)"
+         Tab(2).Control(1)=   "chkUseMultiLoop"
+         Tab(2).Control(2)=   "fraLoop(1)"
+         Tab(2).Control(3)=   "fraLoop(2)"
+         Tab(2).Control(4)=   "fraLoop(3)"
+         Tab(2).Control(5)=   "fraLoop(4)"
+         Tab(2).Control(6)=   "fraLoop(5)"
+         Tab(2).Control(7)=   "tabSCR"
          Tab(2).ControlCount=   8
          TabCaption(3)   =   "TCM"
          TabPicture(3)   =   "frmRecipeEdit.frx":9122C
          Tab(3).ControlEnabled=   0   'False
-         Tab(3).Control(0)=   "chkRunAz1(0)"
-         Tab(3).Control(1)=   "chkRunAz1(1)"
-         Tab(3).Control(2)=   "chkRunAz1(2)"
-         Tab(3).Control(3)=   "chkRunAz1(3)"
-         Tab(3).Control(4)=   "txtTestStepAz1"
+         Tab(3).Control(0)=   "fraAz1"
+         Tab(3).Control(1)=   "cmdWriteOther"
+         Tab(3).Control(2)=   "cmdReadAz1"
+         Tab(3).Control(3)=   "cmdWriteAz1"
+         Tab(3).Control(4)=   "fraAz2"
          Tab(3).Control(5)=   "chkTestAz1"
-         Tab(3).Control(6)=   "fraAz2"
-         Tab(3).Control(7)=   "cmdWriteAz1"
-         Tab(3).Control(8)=   "cmdReadAz1"
-         Tab(3).Control(9)=   "cmdWriteOther"
-         Tab(3).Control(10)=   "fraAz1"
+         Tab(3).Control(6)=   "txtTestStepAz1"
+         Tab(3).Control(7)=   "chkRunAz1(3)"
+         Tab(3).Control(8)=   "chkRunAz1(2)"
+         Tab(3).Control(9)=   "chkRunAz1(1)"
+         Tab(3).Control(10)=   "chkRunAz1(0)"
          Tab(3).ControlCount=   11
          Begin MSHierarchicalFlexGridLib.MSHFlexGrid hfgRecipe 
             Height          =   7335
@@ -2586,7 +2586,6 @@ Begin VB.Form frmRecipeEdit
                TabIndex        =   463
                Text            =   "100"
                Top             =   1200
-               Visible         =   0   'False
                Width           =   615
             End
             Begin VB.TextBox txtIntensityWeight 
@@ -2606,7 +2605,6 @@ Begin VB.Form frmRecipeEdit
                TabIndex        =   462
                Text            =   "100"
                Top             =   1200
-               Visible         =   0   'False
                Width           =   615
             End
             Begin VB.TextBox txtIntensityWeight 
@@ -2626,7 +2624,6 @@ Begin VB.Form frmRecipeEdit
                TabIndex        =   461
                Text            =   "100"
                Top             =   1200
-               Visible         =   0   'False
                Width           =   615
             End
             Begin VB.TextBox txtIntensityWeight 
@@ -2646,7 +2643,6 @@ Begin VB.Form frmRecipeEdit
                TabIndex        =   460
                Text            =   "100"
                Top             =   1200
-               Visible         =   0   'False
                Width           =   615
             End
             Begin VB.TextBox txtIntensityWeight 
@@ -2666,7 +2662,6 @@ Begin VB.Form frmRecipeEdit
                TabIndex        =   459
                Text            =   "100"
                Top             =   1200
-               Visible         =   0   'False
                Width           =   615
             End
             Begin VB.TextBox txtIntensityWeightS 
@@ -2800,7 +2795,6 @@ Begin VB.Form frmRecipeEdit
                TabIndex        =   452
                Text            =   "100"
                Top             =   1200
-               Visible         =   0   'False
                Width           =   615
             End
             Begin VB.TextBox txtIntensityWeightS 
@@ -2839,7 +2833,6 @@ Begin VB.Form frmRecipeEdit
                TabIndex        =   450
                Text            =   "100"
                Top             =   1200
-               Visible         =   0   'False
                Width           =   615
             End
             Begin VB.TextBox txtIntensityWeightS 
@@ -2878,7 +2871,6 @@ Begin VB.Form frmRecipeEdit
                TabIndex        =   448
                Text            =   "100"
                Top             =   1200
-               Visible         =   0   'False
                Width           =   615
             End
             Begin VB.TextBox txtIntensityWeightS 
@@ -2917,7 +2909,6 @@ Begin VB.Form frmRecipeEdit
                TabIndex        =   446
                Text            =   "100"
                Top             =   1200
-               Visible         =   0   'False
                Width           =   615
             End
             Begin VB.TextBox txtIntensityWeightS 
@@ -2956,7 +2947,6 @@ Begin VB.Form frmRecipeEdit
                TabIndex        =   444
                Text            =   "100"
                Top             =   1200
-               Visible         =   0   'False
                Width           =   615
             End
             Begin VB.TextBox txtIntensityWeight 
@@ -2976,7 +2966,6 @@ Begin VB.Form frmRecipeEdit
                TabIndex        =   443
                Text            =   "100"
                Top             =   1200
-               Visible         =   0   'False
                Width           =   615
             End
             Begin VB.TextBox txtIntensityWeightS 
@@ -3015,7 +3004,6 @@ Begin VB.Form frmRecipeEdit
                TabIndex        =   441
                Text            =   "100"
                Top             =   1200
-               Visible         =   0   'False
                Width           =   615
             End
             Begin VB.TextBox txtIntensityWeightS 
@@ -3073,7 +3061,6 @@ Begin VB.Form frmRecipeEdit
                TabIndex        =   438
                Text            =   "100"
                Top             =   1200
-               Visible         =   0   'False
                Width           =   615
             End
             Begin VB.TextBox txtIntensityWeightS 
@@ -3112,7 +3099,6 @@ Begin VB.Form frmRecipeEdit
                TabIndex        =   436
                Text            =   "100"
                Top             =   1200
-               Visible         =   0   'False
                Width           =   615
             End
             Begin VB.TextBox txtIntensityWeight 
@@ -3132,7 +3118,6 @@ Begin VB.Form frmRecipeEdit
                TabIndex        =   435
                Text            =   "100"
                Top             =   1200
-               Visible         =   0   'False
                Width           =   615
             End
             Begin VB.TextBox txtIntensityWeightS 
@@ -3171,7 +3156,6 @@ Begin VB.Form frmRecipeEdit
                TabIndex        =   433
                Text            =   "100"
                Top             =   1200
-               Visible         =   0   'False
                Width           =   615
             End
             Begin VB.TextBox txtIntensityWeightS 
@@ -3229,7 +3213,6 @@ Begin VB.Form frmRecipeEdit
                TabIndex        =   430
                Text            =   "100"
                Top             =   1200
-               Visible         =   0   'False
                Width           =   615
             End
             Begin VB.Label lbName 
@@ -3249,7 +3232,6 @@ Begin VB.Form frmRecipeEdit
                Left            =   120
                TabIndex        =   482
                Top             =   1200
-               Visible         =   0   'False
                Width           =   2010
             End
             Begin VB.Label lbName 
@@ -5366,126 +5348,126 @@ Begin VB.Form frmRecipeEdit
             TabCaption(1)   =   "MTC"
             TabPicture(1)   =   "frmRecipeEdit.frx":91264
             Tab(1).ControlEnabled=   0   'False
-            Tab(1).Control(0)=   "lbName(208)"
-            Tab(1).Control(1)=   "lbName(207)"
-            Tab(1).Control(2)=   "lbName(206)"
-            Tab(1).Control(3)=   "lbName(205)"
-            Tab(1).Control(4)=   "lbName(204)"
-            Tab(1).Control(5)=   "lbName(203)"
-            Tab(1).Control(6)=   "lbName(202)"
-            Tab(1).Control(7)=   "lbName(201)"
-            Tab(1).Control(8)=   "lbName(200)"
-            Tab(1).Control(9)=   "lbName(199)"
-            Tab(1).Control(10)=   "lbName(198)"
-            Tab(1).Control(11)=   "lbName(197)"
-            Tab(1).Control(12)=   "lbName(196)"
-            Tab(1).Control(13)=   "lbName(195)"
-            Tab(1).Control(14)=   "lbName(194)"
-            Tab(1).Control(15)=   "lbName(193)"
-            Tab(1).Control(16)=   "lbName(192)"
-            Tab(1).Control(17)=   "lbName(191)"
-            Tab(1).Control(18)=   "lbName(190)"
-            Tab(1).Control(19)=   "lbName(187)"
-            Tab(1).Control(20)=   "lbName(186)"
-            Tab(1).Control(21)=   "lbName(185)"
-            Tab(1).Control(22)=   "lbName(184)"
-            Tab(1).Control(23)=   "lbName(183)"
-            Tab(1).Control(24)=   "lbName(182)"
-            Tab(1).Control(25)=   "lbName(181)"
-            Tab(1).Control(26)=   "lbName(180)"
-            Tab(1).Control(27)=   "lbName(179)"
-            Tab(1).Control(28)=   "lbName(178)"
-            Tab(1).Control(29)=   "lbName(177)"
-            Tab(1).Control(30)=   "lbName(176)"
-            Tab(1).Control(31)=   "lbName(175)"
-            Tab(1).Control(32)=   "lbName(174)"
-            Tab(1).Control(33)=   "lbName(173)"
-            Tab(1).Control(34)=   "lbName(172)"
-            Tab(1).Control(35)=   "lbName(171)"
-            Tab(1).Control(36)=   "lbName(170)"
-            Tab(1).Control(37)=   "lbName(169)"
-            Tab(1).Control(38)=   "lbName(168)"
-            Tab(1).Control(39)=   "lbName(167)"
-            Tab(1).Control(40)=   "lbName(166)"
-            Tab(1).Control(41)=   "lbName(165)"
-            Tab(1).Control(42)=   "lbName(164)"
-            Tab(1).Control(43)=   "lbName(163)"
-            Tab(1).Control(44)=   "lbName(162)"
-            Tab(1).Control(45)=   "lbName(161)"
-            Tab(1).Control(46)=   "lbName(160)"
-            Tab(1).Control(47)=   "lbName(157)"
-            Tab(1).Control(48)=   "lbName(156)"
-            Tab(1).Control(49)=   "lbName(155)"
-            Tab(1).Control(50)=   "lbName(154)"
-            Tab(1).Control(51)=   "lbName(153)"
-            Tab(1).Control(52)=   "lbName(152)"
-            Tab(1).Control(53)=   "lbName(151)"
-            Tab(1).Control(54)=   "lbName(150)"
-            Tab(1).Control(55)=   "lbName(149)"
-            Tab(1).Control(56)=   "lbName(148)"
-            Tab(1).Control(57)=   "lbName(147)"
-            Tab(1).Control(58)=   "lbName(146)"
-            Tab(1).Control(59)=   "lbName(145)"
-            Tab(1).Control(60)=   "txtLoopMK(0)"
-            Tab(1).Control(61)=   "txtLoopMJ(0)"
-            Tab(1).Control(62)=   "txtLoopMH(0)"
-            Tab(1).Control(63)=   "txtLoopMG(0)"
-            Tab(1).Control(64)=   "txtLoopMF(0)"
-            Tab(1).Control(65)=   "txtLoopME(0)"
-            Tab(1).Control(66)=   "txtLoopMD(0)"
-            Tab(1).Control(67)=   "txtLoopMC(0)"
-            Tab(1).Control(68)=   "txtLoopMB(0)"
-            Tab(1).Control(69)=   "txtLoopMA(0)"
-            Tab(1).Control(70)=   "txtLoopMK(1)"
-            Tab(1).Control(71)=   "txtLoopMJ(1)"
-            Tab(1).Control(72)=   "txtLoopMH(1)"
-            Tab(1).Control(73)=   "txtLoopMG(1)"
-            Tab(1).Control(74)=   "txtLoopMF(1)"
-            Tab(1).Control(75)=   "txtLoopMA(1)"
-            Tab(1).Control(76)=   "txtLoopMB(1)"
-            Tab(1).Control(77)=   "txtLoopMC(1)"
-            Tab(1).Control(78)=   "txtLoopMD(1)"
-            Tab(1).Control(79)=   "txtLoopME(1)"
-            Tab(1).Control(80)=   "txtLoopMK(2)"
-            Tab(1).Control(81)=   "txtLoopMJ(2)"
-            Tab(1).Control(82)=   "txtLoopMH(2)"
-            Tab(1).Control(83)=   "txtLoopMG(2)"
-            Tab(1).Control(84)=   "txtLoopMF(2)"
-            Tab(1).Control(85)=   "txtLoopMA(2)"
-            Tab(1).Control(86)=   "txtLoopMB(2)"
-            Tab(1).Control(87)=   "txtLoopMC(2)"
-            Tab(1).Control(88)=   "txtLoopMD(2)"
-            Tab(1).Control(89)=   "txtLoopME(2)"
-            Tab(1).Control(90)=   "txtLoopMK(3)"
-            Tab(1).Control(91)=   "txtLoopMJ(3)"
-            Tab(1).Control(92)=   "txtLoopMH(3)"
-            Tab(1).Control(93)=   "txtLoopMG(3)"
-            Tab(1).Control(94)=   "txtLoopMF(3)"
-            Tab(1).Control(95)=   "txtLoopMA(3)"
-            Tab(1).Control(96)=   "txtLoopMB(3)"
-            Tab(1).Control(97)=   "txtLoopMC(3)"
-            Tab(1).Control(98)=   "txtLoopMD(3)"
-            Tab(1).Control(99)=   "txtLoopME(3)"
-            Tab(1).Control(100)=   "txtLoopMK(4)"
-            Tab(1).Control(101)=   "txtLoopMJ(4)"
-            Tab(1).Control(102)=   "txtLoopMH(4)"
-            Tab(1).Control(103)=   "txtLoopMG(4)"
-            Tab(1).Control(104)=   "txtLoopMF(4)"
-            Tab(1).Control(105)=   "txtLoopMA(4)"
-            Tab(1).Control(106)=   "txtLoopMB(4)"
-            Tab(1).Control(107)=   "txtLoopMC(4)"
-            Tab(1).Control(108)=   "txtLoopMD(4)"
-            Tab(1).Control(109)=   "txtLoopME(4)"
-            Tab(1).Control(110)=   "txtLoopMK(5)"
-            Tab(1).Control(111)=   "txtLoopMJ(5)"
-            Tab(1).Control(112)=   "txtLoopMH(5)"
-            Tab(1).Control(113)=   "txtLoopMG(5)"
-            Tab(1).Control(114)=   "txtLoopMF(5)"
-            Tab(1).Control(115)=   "txtLoopMA(5)"
-            Tab(1).Control(116)=   "txtLoopMB(5)"
-            Tab(1).Control(117)=   "txtLoopMC(5)"
-            Tab(1).Control(118)=   "txtLoopMD(5)"
-            Tab(1).Control(119)=   "txtLoopME(5)"
+            Tab(1).Control(0)=   "txtLoopME(5)"
+            Tab(1).Control(1)=   "txtLoopMD(5)"
+            Tab(1).Control(2)=   "txtLoopMC(5)"
+            Tab(1).Control(3)=   "txtLoopMB(5)"
+            Tab(1).Control(4)=   "txtLoopMA(5)"
+            Tab(1).Control(5)=   "txtLoopMF(5)"
+            Tab(1).Control(6)=   "txtLoopMG(5)"
+            Tab(1).Control(7)=   "txtLoopMH(5)"
+            Tab(1).Control(8)=   "txtLoopMJ(5)"
+            Tab(1).Control(9)=   "txtLoopMK(5)"
+            Tab(1).Control(10)=   "txtLoopME(4)"
+            Tab(1).Control(11)=   "txtLoopMD(4)"
+            Tab(1).Control(12)=   "txtLoopMC(4)"
+            Tab(1).Control(13)=   "txtLoopMB(4)"
+            Tab(1).Control(14)=   "txtLoopMA(4)"
+            Tab(1).Control(15)=   "txtLoopMF(4)"
+            Tab(1).Control(16)=   "txtLoopMG(4)"
+            Tab(1).Control(17)=   "txtLoopMH(4)"
+            Tab(1).Control(18)=   "txtLoopMJ(4)"
+            Tab(1).Control(19)=   "txtLoopMK(4)"
+            Tab(1).Control(20)=   "txtLoopME(3)"
+            Tab(1).Control(21)=   "txtLoopMD(3)"
+            Tab(1).Control(22)=   "txtLoopMC(3)"
+            Tab(1).Control(23)=   "txtLoopMB(3)"
+            Tab(1).Control(24)=   "txtLoopMA(3)"
+            Tab(1).Control(25)=   "txtLoopMF(3)"
+            Tab(1).Control(26)=   "txtLoopMG(3)"
+            Tab(1).Control(27)=   "txtLoopMH(3)"
+            Tab(1).Control(28)=   "txtLoopMJ(3)"
+            Tab(1).Control(29)=   "txtLoopMK(3)"
+            Tab(1).Control(30)=   "txtLoopME(2)"
+            Tab(1).Control(31)=   "txtLoopMD(2)"
+            Tab(1).Control(32)=   "txtLoopMC(2)"
+            Tab(1).Control(33)=   "txtLoopMB(2)"
+            Tab(1).Control(34)=   "txtLoopMA(2)"
+            Tab(1).Control(35)=   "txtLoopMF(2)"
+            Tab(1).Control(36)=   "txtLoopMG(2)"
+            Tab(1).Control(37)=   "txtLoopMH(2)"
+            Tab(1).Control(38)=   "txtLoopMJ(2)"
+            Tab(1).Control(39)=   "txtLoopMK(2)"
+            Tab(1).Control(40)=   "txtLoopME(1)"
+            Tab(1).Control(41)=   "txtLoopMD(1)"
+            Tab(1).Control(42)=   "txtLoopMC(1)"
+            Tab(1).Control(43)=   "txtLoopMB(1)"
+            Tab(1).Control(44)=   "txtLoopMA(1)"
+            Tab(1).Control(45)=   "txtLoopMF(1)"
+            Tab(1).Control(46)=   "txtLoopMG(1)"
+            Tab(1).Control(47)=   "txtLoopMH(1)"
+            Tab(1).Control(48)=   "txtLoopMJ(1)"
+            Tab(1).Control(49)=   "txtLoopMK(1)"
+            Tab(1).Control(50)=   "txtLoopMA(0)"
+            Tab(1).Control(51)=   "txtLoopMB(0)"
+            Tab(1).Control(52)=   "txtLoopMC(0)"
+            Tab(1).Control(53)=   "txtLoopMD(0)"
+            Tab(1).Control(54)=   "txtLoopME(0)"
+            Tab(1).Control(55)=   "txtLoopMF(0)"
+            Tab(1).Control(56)=   "txtLoopMG(0)"
+            Tab(1).Control(57)=   "txtLoopMH(0)"
+            Tab(1).Control(58)=   "txtLoopMJ(0)"
+            Tab(1).Control(59)=   "txtLoopMK(0)"
+            Tab(1).Control(60)=   "lbName(145)"
+            Tab(1).Control(61)=   "lbName(146)"
+            Tab(1).Control(62)=   "lbName(147)"
+            Tab(1).Control(63)=   "lbName(148)"
+            Tab(1).Control(64)=   "lbName(149)"
+            Tab(1).Control(65)=   "lbName(150)"
+            Tab(1).Control(66)=   "lbName(151)"
+            Tab(1).Control(67)=   "lbName(152)"
+            Tab(1).Control(68)=   "lbName(153)"
+            Tab(1).Control(69)=   "lbName(154)"
+            Tab(1).Control(70)=   "lbName(155)"
+            Tab(1).Control(71)=   "lbName(156)"
+            Tab(1).Control(72)=   "lbName(157)"
+            Tab(1).Control(73)=   "lbName(160)"
+            Tab(1).Control(74)=   "lbName(161)"
+            Tab(1).Control(75)=   "lbName(162)"
+            Tab(1).Control(76)=   "lbName(163)"
+            Tab(1).Control(77)=   "lbName(164)"
+            Tab(1).Control(78)=   "lbName(165)"
+            Tab(1).Control(79)=   "lbName(166)"
+            Tab(1).Control(80)=   "lbName(167)"
+            Tab(1).Control(81)=   "lbName(168)"
+            Tab(1).Control(82)=   "lbName(169)"
+            Tab(1).Control(83)=   "lbName(170)"
+            Tab(1).Control(84)=   "lbName(171)"
+            Tab(1).Control(85)=   "lbName(172)"
+            Tab(1).Control(86)=   "lbName(173)"
+            Tab(1).Control(87)=   "lbName(174)"
+            Tab(1).Control(88)=   "lbName(175)"
+            Tab(1).Control(89)=   "lbName(176)"
+            Tab(1).Control(90)=   "lbName(177)"
+            Tab(1).Control(91)=   "lbName(178)"
+            Tab(1).Control(92)=   "lbName(179)"
+            Tab(1).Control(93)=   "lbName(180)"
+            Tab(1).Control(94)=   "lbName(181)"
+            Tab(1).Control(95)=   "lbName(182)"
+            Tab(1).Control(96)=   "lbName(183)"
+            Tab(1).Control(97)=   "lbName(184)"
+            Tab(1).Control(98)=   "lbName(185)"
+            Tab(1).Control(99)=   "lbName(186)"
+            Tab(1).Control(100)=   "lbName(187)"
+            Tab(1).Control(101)=   "lbName(190)"
+            Tab(1).Control(102)=   "lbName(191)"
+            Tab(1).Control(103)=   "lbName(192)"
+            Tab(1).Control(104)=   "lbName(193)"
+            Tab(1).Control(105)=   "lbName(194)"
+            Tab(1).Control(106)=   "lbName(195)"
+            Tab(1).Control(107)=   "lbName(196)"
+            Tab(1).Control(108)=   "lbName(197)"
+            Tab(1).Control(109)=   "lbName(198)"
+            Tab(1).Control(110)=   "lbName(199)"
+            Tab(1).Control(111)=   "lbName(200)"
+            Tab(1).Control(112)=   "lbName(201)"
+            Tab(1).Control(113)=   "lbName(202)"
+            Tab(1).Control(114)=   "lbName(203)"
+            Tab(1).Control(115)=   "lbName(204)"
+            Tab(1).Control(116)=   "lbName(205)"
+            Tab(1).Control(117)=   "lbName(206)"
+            Tab(1).Control(118)=   "lbName(207)"
+            Tab(1).Control(119)=   "lbName(208)"
             Tab(1).ControlCount=   120
             Begin VB.TextBox txtLoopE 
                Height          =   390

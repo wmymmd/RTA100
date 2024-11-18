@@ -24,11 +24,44 @@ Begin VB.Form frmPlotProcess
    ScaleMode       =   0  'User
    ScaleWidth      =   19922.03
    WindowState     =   2  'Maximized
+   Begin VB.Frame FraVac2 
+      Height          =   735
+      Left            =   11880
+      TabIndex        =   255
+      Top             =   8760
+      Visible         =   0   'False
+      Width           =   3015
+      Begin VB.Label Label6 
+         Caption         =   "Torr"
+         Height          =   255
+         Left            =   2400
+         TabIndex        =   258
+         Top             =   240
+         Width           =   495
+      End
+      Begin VB.Label lbVacuum2 
+         Alignment       =   2  'Center
+         Caption         =   "760"
+         Height          =   255
+         Left            =   960
+         TabIndex        =   257
+         Top             =   240
+         Width           =   1335
+      End
+      Begin VB.Label Label4 
+         Caption         =   "À£¤O2:"
+         Height          =   375
+         Left            =   120
+         TabIndex        =   256
+         Top             =   240
+         Width           =   735
+      End
+   End
    Begin VB.Frame fraMTCB 
       Caption         =   "MTC2"
       Height          =   3495
       Left            =   16200
-      TabIndex        =   201
+      TabIndex        =   200
       Top             =   0
       Visible         =   0   'False
       Width           =   1695
@@ -37,7 +70,7 @@ Begin VB.Form frmPlotProcess
          Height          =   270
          Index           =   16
          Left            =   1320
-         TabIndex        =   209
+         TabIndex        =   208
          Top             =   360
          Width           =   255
       End
@@ -46,7 +79,7 @@ Begin VB.Form frmPlotProcess
          Height          =   270
          Index           =   17
          Left            =   1320
-         TabIndex        =   208
+         TabIndex        =   207
          Top             =   720
          Width           =   255
       End
@@ -55,7 +88,7 @@ Begin VB.Form frmPlotProcess
          Height          =   270
          Index           =   18
          Left            =   1320
-         TabIndex        =   207
+         TabIndex        =   206
          Top             =   1080
          Width           =   255
       End
@@ -64,7 +97,7 @@ Begin VB.Form frmPlotProcess
          Height          =   270
          Index           =   19
          Left            =   1320
-         TabIndex        =   206
+         TabIndex        =   205
          Top             =   1440
          Width           =   255
       End
@@ -73,7 +106,7 @@ Begin VB.Form frmPlotProcess
          Height          =   270
          Index           =   20
          Left            =   1320
-         TabIndex        =   205
+         TabIndex        =   204
          Top             =   1800
          Width           =   255
       End
@@ -82,7 +115,7 @@ Begin VB.Form frmPlotProcess
          Height          =   270
          Index           =   21
          Left            =   1320
-         TabIndex        =   204
+         TabIndex        =   203
          Top             =   2160
          Width           =   255
       End
@@ -91,7 +124,7 @@ Begin VB.Form frmPlotProcess
          Height          =   270
          Index           =   22
          Left            =   1320
-         TabIndex        =   203
+         TabIndex        =   202
          Top             =   2520
          Width           =   255
       End
@@ -100,7 +133,7 @@ Begin VB.Form frmPlotProcess
          Height          =   270
          Index           =   23
          Left            =   1320
-         TabIndex        =   202
+         TabIndex        =   201
          Top             =   2880
          Width           =   255
       End
@@ -123,7 +156,7 @@ Begin VB.Form frmPlotProcess
          Height          =   375
          Index           =   16
          Left            =   480
-         TabIndex        =   225
+         TabIndex        =   224
          Top             =   360
          Width           =   735
       End
@@ -133,7 +166,7 @@ Begin VB.Form frmPlotProcess
          Height          =   375
          Index           =   15
          Left            =   120
-         TabIndex        =   224
+         TabIndex        =   223
          Top             =   360
          Width           =   255
       End
@@ -143,7 +176,7 @@ Begin VB.Form frmPlotProcess
          Height          =   375
          Index           =   14
          Left            =   120
-         TabIndex        =   223
+         TabIndex        =   222
          Top             =   720
          Width           =   255
       End
@@ -166,7 +199,7 @@ Begin VB.Form frmPlotProcess
          Height          =   375
          Index           =   17
          Left            =   480
-         TabIndex        =   222
+         TabIndex        =   221
          Top             =   720
          Width           =   735
       End
@@ -189,7 +222,7 @@ Begin VB.Form frmPlotProcess
          Height          =   375
          Index           =   18
          Left            =   480
-         TabIndex        =   221
+         TabIndex        =   220
          Top             =   1080
          Width           =   735
       End
@@ -212,7 +245,7 @@ Begin VB.Form frmPlotProcess
          Height          =   375
          Index           =   19
          Left            =   480
-         TabIndex        =   220
+         TabIndex        =   219
          Top             =   1440
          Width           =   735
       End
@@ -235,7 +268,7 @@ Begin VB.Form frmPlotProcess
          Height          =   375
          Index           =   20
          Left            =   480
-         TabIndex        =   219
+         TabIndex        =   218
          Top             =   1800
          Width           =   735
       End
@@ -258,7 +291,7 @@ Begin VB.Form frmPlotProcess
          Height          =   375
          Index           =   21
          Left            =   480
-         TabIndex        =   218
+         TabIndex        =   217
          Top             =   2160
          Width           =   735
       End
@@ -281,7 +314,7 @@ Begin VB.Form frmPlotProcess
          Height          =   375
          Index           =   22
          Left            =   480
-         TabIndex        =   217
+         TabIndex        =   216
          Top             =   2520
          Width           =   735
       End
@@ -304,7 +337,7 @@ Begin VB.Form frmPlotProcess
          Height          =   375
          Index           =   23
          Left            =   480
-         TabIndex        =   216
+         TabIndex        =   215
          Top             =   2880
          Width           =   735
       End
@@ -314,7 +347,7 @@ Begin VB.Form frmPlotProcess
          Height          =   375
          Index           =   13
          Left            =   120
-         TabIndex        =   215
+         TabIndex        =   214
          Top             =   1080
          Width           =   255
       End
@@ -324,7 +357,7 @@ Begin VB.Form frmPlotProcess
          Height          =   375
          Index           =   12
          Left            =   120
-         TabIndex        =   214
+         TabIndex        =   213
          Top             =   1440
          Width           =   255
       End
@@ -334,7 +367,7 @@ Begin VB.Form frmPlotProcess
          Height          =   375
          Index           =   11
          Left            =   120
-         TabIndex        =   213
+         TabIndex        =   212
          Top             =   1800
          Width           =   255
       End
@@ -344,7 +377,7 @@ Begin VB.Form frmPlotProcess
          Height          =   375
          Index           =   10
          Left            =   120
-         TabIndex        =   212
+         TabIndex        =   211
          Top             =   2160
          Width           =   255
       End
@@ -354,7 +387,7 @@ Begin VB.Form frmPlotProcess
          Height          =   375
          Index           =   9
          Left            =   120
-         TabIndex        =   211
+         TabIndex        =   210
          Top             =   2520
          Width           =   255
       End
@@ -364,7 +397,7 @@ Begin VB.Form frmPlotProcess
          Height          =   375
          Index           =   8
          Left            =   120
-         TabIndex        =   210
+         TabIndex        =   209
          Top             =   2880
          Width           =   255
       End
@@ -373,13 +406,13 @@ Begin VB.Form frmPlotProcess
       Caption         =   "Lamp Current"
       Height          =   2055
       Left            =   120
-      TabIndex        =   140
+      TabIndex        =   139
       Top             =   9480
       Width           =   17175
       Begin MSHierarchicalFlexGridLib.MSHFlexGrid hfgCTConfigProcess 
          Height          =   1695
          Left            =   0
-         TabIndex        =   255
+         TabIndex        =   254
          Top             =   240
          Visible         =   0   'False
          Width           =   17055
@@ -399,7 +432,7 @@ Begin VB.Form frmPlotProcess
          Height          =   375
          Index           =   59
          Left            =   10920
-         TabIndex        =   200
+         TabIndex        =   199
          Top             =   1440
          Width           =   495
       End
@@ -409,7 +442,7 @@ Begin VB.Form frmPlotProcess
          Height          =   375
          Index           =   58
          Left            =   10440
-         TabIndex        =   199
+         TabIndex        =   198
          Top             =   1440
          Width           =   495
       End
@@ -419,7 +452,7 @@ Begin VB.Form frmPlotProcess
          Height          =   375
          Index           =   57
          Left            =   9960
-         TabIndex        =   198
+         TabIndex        =   197
          Top             =   1440
          Width           =   495
       End
@@ -429,7 +462,7 @@ Begin VB.Form frmPlotProcess
          Height          =   375
          Index           =   56
          Left            =   9480
-         TabIndex        =   197
+         TabIndex        =   196
          Top             =   1440
          Width           =   495
       End
@@ -439,7 +472,7 @@ Begin VB.Form frmPlotProcess
          Height          =   375
          Index           =   55
          Left            =   9000
-         TabIndex        =   196
+         TabIndex        =   195
          Top             =   1440
          Width           =   495
       End
@@ -449,7 +482,7 @@ Begin VB.Form frmPlotProcess
          Height          =   375
          Index           =   54
          Left            =   8400
-         TabIndex        =   195
+         TabIndex        =   194
          Top             =   1440
          Width           =   495
       End
@@ -459,7 +492,7 @@ Begin VB.Form frmPlotProcess
          Height          =   375
          Index           =   53
          Left            =   7920
-         TabIndex        =   194
+         TabIndex        =   193
          Top             =   1440
          Width           =   495
       End
@@ -469,7 +502,7 @@ Begin VB.Form frmPlotProcess
          Height          =   375
          Index           =   52
          Left            =   7440
-         TabIndex        =   193
+         TabIndex        =   192
          Top             =   1440
          Width           =   495
       End
@@ -479,7 +512,7 @@ Begin VB.Form frmPlotProcess
          Height          =   375
          Index           =   51
          Left            =   6960
-         TabIndex        =   192
+         TabIndex        =   191
          Top             =   1440
          Width           =   495
       End
@@ -489,7 +522,7 @@ Begin VB.Form frmPlotProcess
          Height          =   375
          Index           =   50
          Left            =   7920
-         TabIndex        =   191
+         TabIndex        =   190
          Top             =   960
          Width           =   495
       End
@@ -499,7 +532,7 @@ Begin VB.Form frmPlotProcess
          Height          =   375
          Index           =   49
          Left            =   7440
-         TabIndex        =   190
+         TabIndex        =   189
          Top             =   960
          Width           =   495
       End
@@ -509,7 +542,7 @@ Begin VB.Form frmPlotProcess
          Height          =   375
          Index           =   48
          Left            =   6960
-         TabIndex        =   189
+         TabIndex        =   188
          Top             =   960
          Width           =   495
       End
@@ -519,7 +552,7 @@ Begin VB.Form frmPlotProcess
          Height          =   375
          Index           =   47
          Left            =   6120
-         TabIndex        =   188
+         TabIndex        =   187
          Top             =   960
          Width           =   495
       End
@@ -529,7 +562,7 @@ Begin VB.Form frmPlotProcess
          Height          =   375
          Index           =   46
          Left            =   5640
-         TabIndex        =   187
+         TabIndex        =   186
          Top             =   960
          Width           =   495
       End
@@ -539,7 +572,7 @@ Begin VB.Form frmPlotProcess
          Height          =   375
          Index           =   45
          Left            =   5160
-         TabIndex        =   186
+         TabIndex        =   185
          Top             =   960
          Width           =   495
       End
@@ -549,7 +582,7 @@ Begin VB.Form frmPlotProcess
          Height          =   375
          Index           =   44
          Left            =   4440
-         TabIndex        =   185
+         TabIndex        =   184
          Top             =   960
          Width           =   495
       End
@@ -559,7 +592,7 @@ Begin VB.Form frmPlotProcess
          Height          =   375
          Index           =   43
          Left            =   3960
-         TabIndex        =   184
+         TabIndex        =   183
          Top             =   960
          Width           =   495
       End
@@ -569,7 +602,7 @@ Begin VB.Form frmPlotProcess
          Height          =   375
          Index           =   42
          Left            =   3480
-         TabIndex        =   183
+         TabIndex        =   182
          Top             =   960
          Width           =   495
       End
@@ -579,7 +612,7 @@ Begin VB.Form frmPlotProcess
          Height          =   375
          Index           =   41
          Left            =   2760
-         TabIndex        =   182
+         TabIndex        =   181
          Top             =   960
          Width           =   495
       End
@@ -589,7 +622,7 @@ Begin VB.Form frmPlotProcess
          Height          =   375
          Index           =   40
          Left            =   2280
-         TabIndex        =   181
+         TabIndex        =   180
          Top             =   960
          Width           =   495
       End
@@ -599,7 +632,7 @@ Begin VB.Form frmPlotProcess
          Height          =   375
          Index           =   39
          Left            =   1800
-         TabIndex        =   180
+         TabIndex        =   179
          Top             =   960
          Width           =   495
       End
@@ -609,7 +642,7 @@ Begin VB.Form frmPlotProcess
          Height          =   375
          Index           =   38
          Left            =   1080
-         TabIndex        =   179
+         TabIndex        =   178
          Top             =   960
          Width           =   495
       End
@@ -619,7 +652,7 @@ Begin VB.Form frmPlotProcess
          Height          =   375
          Index           =   37
          Left            =   600
-         TabIndex        =   178
+         TabIndex        =   177
          Top             =   960
          Width           =   495
       End
@@ -629,7 +662,7 @@ Begin VB.Form frmPlotProcess
          Height          =   375
          Index           =   36
          Left            =   120
-         TabIndex        =   177
+         TabIndex        =   176
          Top             =   960
          Width           =   495
       End
@@ -639,7 +672,7 @@ Begin VB.Form frmPlotProcess
          Height          =   375
          Index           =   24
          Left            =   3480
-         TabIndex        =   176
+         TabIndex        =   175
          Top             =   600
          Width           =   495
       End
@@ -649,7 +682,7 @@ Begin VB.Form frmPlotProcess
          Height          =   375
          Index           =   23
          Left            =   2760
-         TabIndex        =   175
+         TabIndex        =   174
          Top             =   600
          Width           =   495
       End
@@ -659,7 +692,7 @@ Begin VB.Form frmPlotProcess
          Height          =   375
          Index           =   22
          Left            =   2280
-         TabIndex        =   174
+         TabIndex        =   173
          Top             =   600
          Width           =   495
       End
@@ -669,7 +702,7 @@ Begin VB.Form frmPlotProcess
          Height          =   375
          Index           =   21
          Left            =   1800
-         TabIndex        =   173
+         TabIndex        =   172
          Top             =   600
          Width           =   495
       End
@@ -679,7 +712,7 @@ Begin VB.Form frmPlotProcess
          Height          =   375
          Index           =   28
          Left            =   5640
-         TabIndex        =   172
+         TabIndex        =   171
          Top             =   600
          Width           =   495
       End
@@ -689,7 +722,7 @@ Begin VB.Form frmPlotProcess
          Height          =   375
          Index           =   27
          Left            =   5160
-         TabIndex        =   171
+         TabIndex        =   170
          Top             =   600
          Width           =   495
       End
@@ -699,7 +732,7 @@ Begin VB.Form frmPlotProcess
          Height          =   375
          Index           =   26
          Left            =   4440
-         TabIndex        =   170
+         TabIndex        =   169
          Top             =   600
          Width           =   495
       End
@@ -709,7 +742,7 @@ Begin VB.Form frmPlotProcess
          Height          =   375
          Index           =   25
          Left            =   3960
-         TabIndex        =   169
+         TabIndex        =   168
          Top             =   600
          Width           =   495
       End
@@ -719,7 +752,7 @@ Begin VB.Form frmPlotProcess
          Height          =   375
          Index           =   32
          Left            =   7920
-         TabIndex        =   168
+         TabIndex        =   167
          Top             =   600
          Width           =   495
       End
@@ -729,7 +762,7 @@ Begin VB.Form frmPlotProcess
          Height          =   375
          Index           =   31
          Left            =   7440
-         TabIndex        =   167
+         TabIndex        =   166
          Top             =   600
          Width           =   495
       End
@@ -739,7 +772,7 @@ Begin VB.Form frmPlotProcess
          Height          =   375
          Index           =   30
          Left            =   6960
-         TabIndex        =   166
+         TabIndex        =   165
          Top             =   600
          Width           =   495
       End
@@ -749,7 +782,7 @@ Begin VB.Form frmPlotProcess
          Height          =   375
          Index           =   29
          Left            =   6120
-         TabIndex        =   165
+         TabIndex        =   164
          Top             =   600
          Width           =   495
       End
@@ -759,7 +792,7 @@ Begin VB.Form frmPlotProcess
          Height          =   375
          Index           =   35
          Left            =   9720
-         TabIndex        =   164
+         TabIndex        =   163
          Top             =   600
          Width           =   495
       End
@@ -769,7 +802,7 @@ Begin VB.Form frmPlotProcess
          Height          =   375
          Index           =   34
          Left            =   9240
-         TabIndex        =   163
+         TabIndex        =   162
          Top             =   600
          Width           =   495
       End
@@ -779,7 +812,7 @@ Begin VB.Form frmPlotProcess
          Height          =   375
          Index           =   33
          Left            =   8760
-         TabIndex        =   162
+         TabIndex        =   161
          Top             =   600
          Width           =   495
       End
@@ -789,7 +822,7 @@ Begin VB.Form frmPlotProcess
          Height          =   375
          Index           =   20
          Left            =   1080
-         TabIndex        =   161
+         TabIndex        =   160
          Top             =   600
          Width           =   495
       End
@@ -799,7 +832,7 @@ Begin VB.Form frmPlotProcess
          Height          =   375
          Index           =   19
          Left            =   600
-         TabIndex        =   160
+         TabIndex        =   159
          Top             =   600
          Width           =   495
       End
@@ -809,7 +842,7 @@ Begin VB.Form frmPlotProcess
          Height          =   375
          Index           =   18
          Left            =   120
-         TabIndex        =   159
+         TabIndex        =   158
          Top             =   600
          Width           =   495
       End
@@ -819,7 +852,7 @@ Begin VB.Form frmPlotProcess
          Height          =   375
          Index           =   15
          Left            =   8760
-         TabIndex        =   158
+         TabIndex        =   157
          Top             =   240
          Width           =   495
       End
@@ -829,7 +862,7 @@ Begin VB.Form frmPlotProcess
          Height          =   375
          Index           =   16
          Left            =   9240
-         TabIndex        =   157
+         TabIndex        =   156
          Top             =   240
          Width           =   495
       End
@@ -839,7 +872,7 @@ Begin VB.Form frmPlotProcess
          Height          =   375
          Index           =   17
          Left            =   9720
-         TabIndex        =   156
+         TabIndex        =   155
          Top             =   240
          Width           =   495
       End
@@ -849,7 +882,7 @@ Begin VB.Form frmPlotProcess
          Height          =   375
          Index           =   12
          Left            =   6960
-         TabIndex        =   155
+         TabIndex        =   154
          Top             =   240
          Width           =   495
       End
@@ -859,7 +892,7 @@ Begin VB.Form frmPlotProcess
          Height          =   375
          Index           =   13
          Left            =   7440
-         TabIndex        =   154
+         TabIndex        =   153
          Top             =   240
          Width           =   495
       End
@@ -869,7 +902,7 @@ Begin VB.Form frmPlotProcess
          Height          =   375
          Index           =   14
          Left            =   7920
-         TabIndex        =   153
+         TabIndex        =   152
          Top             =   240
          Width           =   495
       End
@@ -879,7 +912,7 @@ Begin VB.Form frmPlotProcess
          Height          =   375
          Index           =   10
          Left            =   5640
-         TabIndex        =   152
+         TabIndex        =   151
          Top             =   240
          Width           =   495
       End
@@ -889,7 +922,7 @@ Begin VB.Form frmPlotProcess
          Height          =   375
          Index           =   11
          Left            =   6120
-         TabIndex        =   151
+         TabIndex        =   150
          Top             =   240
          Width           =   495
       End
@@ -899,7 +932,7 @@ Begin VB.Form frmPlotProcess
          Height          =   375
          Index           =   8
          Left            =   4440
-         TabIndex        =   150
+         TabIndex        =   149
          Top             =   240
          Width           =   495
       End
@@ -909,7 +942,7 @@ Begin VB.Form frmPlotProcess
          Height          =   375
          Index           =   9
          Left            =   5160
-         TabIndex        =   149
+         TabIndex        =   148
          Top             =   240
          Width           =   495
       End
@@ -919,7 +952,7 @@ Begin VB.Form frmPlotProcess
          Height          =   375
          Index           =   6
          Left            =   3480
-         TabIndex        =   148
+         TabIndex        =   147
          Top             =   240
          Width           =   495
       End
@@ -929,7 +962,7 @@ Begin VB.Form frmPlotProcess
          Height          =   375
          Index           =   7
          Left            =   3960
-         TabIndex        =   147
+         TabIndex        =   146
          Top             =   240
          Width           =   495
       End
@@ -939,7 +972,7 @@ Begin VB.Form frmPlotProcess
          Height          =   375
          Index           =   3
          Left            =   1800
-         TabIndex        =   146
+         TabIndex        =   145
          Top             =   240
          Width           =   495
       End
@@ -949,7 +982,7 @@ Begin VB.Form frmPlotProcess
          Height          =   375
          Index           =   4
          Left            =   2280
-         TabIndex        =   145
+         TabIndex        =   144
          Top             =   240
          Width           =   495
       End
@@ -959,7 +992,7 @@ Begin VB.Form frmPlotProcess
          Height          =   375
          Index           =   5
          Left            =   2760
-         TabIndex        =   144
+         TabIndex        =   143
          Top             =   240
          Width           =   495
       End
@@ -969,7 +1002,7 @@ Begin VB.Form frmPlotProcess
          Height          =   375
          Index           =   2
          Left            =   1080
-         TabIndex        =   143
+         TabIndex        =   142
          Top             =   240
          Width           =   495
       End
@@ -979,7 +1012,7 @@ Begin VB.Form frmPlotProcess
          Height          =   375
          Index           =   1
          Left            =   600
-         TabIndex        =   142
+         TabIndex        =   141
          Top             =   240
          Width           =   495
       End
@@ -989,7 +1022,7 @@ Begin VB.Form frmPlotProcess
          Height          =   375
          Index           =   0
          Left            =   120
-         TabIndex        =   141
+         TabIndex        =   140
          Top             =   240
          Width           =   495
       End
@@ -1006,9 +1039,9 @@ Begin VB.Form frmPlotProcess
       EndProperty
       ForeColor       =   &H00000080&
       Height          =   735
-      Left            =   12000
-      TabIndex        =   116
-      Top             =   8760
+      Left            =   15120
+      TabIndex        =   115
+      Top             =   5760
       Width           =   3015
       Begin VB.Label lbName 
          Alignment       =   1  'Right Justify
@@ -1016,7 +1049,7 @@ Begin VB.Form frmPlotProcess
          Height          =   375
          Index           =   7
          Left            =   120
-         TabIndex        =   119
+         TabIndex        =   118
          Top             =   240
          Width           =   855
       End
@@ -1025,7 +1058,7 @@ Begin VB.Form frmPlotProcess
          Height          =   375
          Index           =   3
          Left            =   2160
-         TabIndex        =   118
+         TabIndex        =   117
          Top             =   240
          Width           =   495
       End
@@ -1034,7 +1067,7 @@ Begin VB.Form frmPlotProcess
          Caption         =   "999"
          Height          =   255
          Left            =   1080
-         TabIndex        =   117
+         TabIndex        =   116
          Top             =   240
          Width           =   855
       End
@@ -1043,7 +1076,7 @@ Begin VB.Form frmPlotProcess
       Caption         =   "MTC1"
       Height          =   3495
       Left            =   14520
-      TabIndex        =   95
+      TabIndex        =   94
       Top             =   0
       Width           =   1695
       Begin VB.CheckBox chkTC 
@@ -1051,7 +1084,7 @@ Begin VB.Form frmPlotProcess
          Height          =   270
          Index           =   15
          Left            =   1320
-         TabIndex        =   139
+         TabIndex        =   138
          Top             =   2880
          Width           =   255
       End
@@ -1060,7 +1093,7 @@ Begin VB.Form frmPlotProcess
          Height          =   270
          Index           =   14
          Left            =   1320
-         TabIndex        =   138
+         TabIndex        =   137
          Top             =   2520
          Width           =   255
       End
@@ -1069,7 +1102,7 @@ Begin VB.Form frmPlotProcess
          Height          =   270
          Index           =   13
          Left            =   1320
-         TabIndex        =   137
+         TabIndex        =   136
          Top             =   2160
          Width           =   255
       End
@@ -1078,7 +1111,7 @@ Begin VB.Form frmPlotProcess
          Height          =   270
          Index           =   12
          Left            =   1320
-         TabIndex        =   136
+         TabIndex        =   135
          Top             =   1800
          Width           =   255
       End
@@ -1087,7 +1120,7 @@ Begin VB.Form frmPlotProcess
          Height          =   270
          Index           =   11
          Left            =   1320
-         TabIndex        =   135
+         TabIndex        =   134
          Top             =   1440
          Width           =   255
       End
@@ -1096,7 +1129,7 @@ Begin VB.Form frmPlotProcess
          Height          =   270
          Index           =   10
          Left            =   1320
-         TabIndex        =   134
+         TabIndex        =   133
          Top             =   1080
          Width           =   255
       End
@@ -1105,7 +1138,7 @@ Begin VB.Form frmPlotProcess
          Height          =   270
          Index           =   9
          Left            =   1320
-         TabIndex        =   133
+         TabIndex        =   132
          Top             =   720
          Width           =   255
       End
@@ -1114,7 +1147,7 @@ Begin VB.Form frmPlotProcess
          Height          =   270
          Index           =   8
          Left            =   1320
-         TabIndex        =   132
+         TabIndex        =   131
          Top             =   360
          Width           =   255
       End
@@ -1124,7 +1157,7 @@ Begin VB.Form frmPlotProcess
          Height          =   375
          Index           =   7
          Left            =   120
-         TabIndex        =   111
+         TabIndex        =   110
          Top             =   2880
          Width           =   255
       End
@@ -1134,7 +1167,7 @@ Begin VB.Form frmPlotProcess
          Height          =   375
          Index           =   6
          Left            =   120
-         TabIndex        =   110
+         TabIndex        =   109
          Top             =   2520
          Width           =   255
       End
@@ -1144,7 +1177,7 @@ Begin VB.Form frmPlotProcess
          Height          =   375
          Index           =   5
          Left            =   120
-         TabIndex        =   109
+         TabIndex        =   108
          Top             =   2160
          Width           =   255
       End
@@ -1154,7 +1187,7 @@ Begin VB.Form frmPlotProcess
          Height          =   375
          Index           =   4
          Left            =   120
-         TabIndex        =   108
+         TabIndex        =   107
          Top             =   1800
          Width           =   255
       End
@@ -1164,7 +1197,7 @@ Begin VB.Form frmPlotProcess
          Height          =   375
          Index           =   3
          Left            =   120
-         TabIndex        =   107
+         TabIndex        =   106
          Top             =   1440
          Width           =   255
       End
@@ -1174,7 +1207,7 @@ Begin VB.Form frmPlotProcess
          Height          =   375
          Index           =   2
          Left            =   120
-         TabIndex        =   106
+         TabIndex        =   105
          Top             =   1080
          Width           =   255
       End
@@ -1197,7 +1230,7 @@ Begin VB.Form frmPlotProcess
          Height          =   375
          Index           =   15
          Left            =   480
-         TabIndex        =   105
+         TabIndex        =   104
          Top             =   2880
          Width           =   735
       End
@@ -1220,7 +1253,7 @@ Begin VB.Form frmPlotProcess
          Height          =   375
          Index           =   14
          Left            =   480
-         TabIndex        =   104
+         TabIndex        =   103
          Top             =   2520
          Width           =   735
       End
@@ -1243,7 +1276,7 @@ Begin VB.Form frmPlotProcess
          Height          =   375
          Index           =   13
          Left            =   480
-         TabIndex        =   103
+         TabIndex        =   102
          Top             =   2160
          Width           =   735
       End
@@ -1266,7 +1299,7 @@ Begin VB.Form frmPlotProcess
          Height          =   375
          Index           =   12
          Left            =   480
-         TabIndex        =   102
+         TabIndex        =   101
          Top             =   1800
          Width           =   735
       End
@@ -1289,7 +1322,7 @@ Begin VB.Form frmPlotProcess
          Height          =   375
          Index           =   11
          Left            =   480
-         TabIndex        =   101
+         TabIndex        =   100
          Top             =   1440
          Width           =   735
       End
@@ -1312,7 +1345,7 @@ Begin VB.Form frmPlotProcess
          Height          =   375
          Index           =   10
          Left            =   480
-         TabIndex        =   100
+         TabIndex        =   99
          Top             =   1080
          Width           =   735
       End
@@ -1335,7 +1368,7 @@ Begin VB.Form frmPlotProcess
          Height          =   375
          Index           =   9
          Left            =   480
-         TabIndex        =   99
+         TabIndex        =   98
          Top             =   720
          Width           =   735
       End
@@ -1345,7 +1378,7 @@ Begin VB.Form frmPlotProcess
          Height          =   375
          Index           =   1
          Left            =   120
-         TabIndex        =   98
+         TabIndex        =   97
          Top             =   720
          Width           =   255
       End
@@ -1355,7 +1388,7 @@ Begin VB.Form frmPlotProcess
          Height          =   375
          Index           =   0
          Left            =   120
-         TabIndex        =   97
+         TabIndex        =   96
          Top             =   360
          Width           =   255
       End
@@ -1378,7 +1411,7 @@ Begin VB.Form frmPlotProcess
          Height          =   375
          Index           =   8
          Left            =   480
-         TabIndex        =   96
+         TabIndex        =   95
          Top             =   360
          Width           =   735
       End
@@ -1397,35 +1430,35 @@ Begin VB.Form frmPlotProcess
       ForeColor       =   &H00000080&
       Height          =   1815
       Left            =   15120
-      TabIndex        =   76
+      TabIndex        =   75
       Top             =   3960
       Visible         =   0   'False
       Width           =   3015
       Begin VB.TextBox txtID2 
          Height          =   390
          Left            =   600
-         TabIndex        =   80
+         TabIndex        =   79
          Top             =   1320
          Width           =   2175
       End
       Begin VB.TextBox txtID1 
          Height          =   390
          Left            =   600
-         TabIndex        =   79
+         TabIndex        =   78
          Top             =   960
          Width           =   2175
       End
       Begin VB.TextBox txtBN 
          Height          =   390
          Left            =   600
-         TabIndex        =   78
+         TabIndex        =   77
          Top             =   600
          Width           =   2175
       End
       Begin VB.TextBox txtPN 
          Height          =   390
          Left            =   600
-         TabIndex        =   77
+         TabIndex        =   76
          Top             =   240
          Width           =   2175
       End
@@ -1435,7 +1468,7 @@ Begin VB.Form frmPlotProcess
          Height          =   270
          Index           =   15
          Left            =   120
-         TabIndex        =   84
+         TabIndex        =   83
          Top             =   1320
          Width           =   225
       End
@@ -1445,7 +1478,7 @@ Begin VB.Form frmPlotProcess
          Height          =   270
          Index           =   6
          Left            =   120
-         TabIndex        =   83
+         TabIndex        =   82
          Top             =   960
          Width           =   330
       End
@@ -1455,7 +1488,7 @@ Begin VB.Form frmPlotProcess
          Height          =   270
          Index           =   5
          Left            =   120
-         TabIndex        =   82
+         TabIndex        =   81
          Top             =   600
          Width           =   330
       End
@@ -1466,7 +1499,7 @@ Begin VB.Form frmPlotProcess
          Index           =   4
          Left            =   120
          MousePointer    =   14  'Arrow and Question
-         TabIndex        =   81
+         TabIndex        =   80
          Top             =   240
          Width           =   330
       End
@@ -1474,7 +1507,7 @@ Begin VB.Form frmPlotProcess
    Begin TabDlg.SSTab tabMain 
       Height          =   5175
       Left            =   11880
-      TabIndex        =   50
+      TabIndex        =   49
       Top             =   3600
       Width           =   3015
       _ExtentX        =   5318
@@ -1482,12 +1515,11 @@ Begin VB.Form frmPlotProcess
       _Version        =   393216
       Style           =   1
       Tabs            =   4
-      Tab             =   3
       TabsPerRow      =   4
       TabHeight       =   520
       TabCaption(0)   =   "¿é¥X"
       TabPicture(0)   =   "frmPlotProcess.frx":0000
-      Tab(0).ControlEnabled=   0   'False
+      Tab(0).ControlEnabled=   -1  'True
       Tab(0).Control(0)=   "lbNameMFC(2)"
       Tab(0).Control(0).Enabled=   0   'False
       Tab(0).Control(1)=   "lbGasUnit(2)"
@@ -1537,29 +1569,17 @@ Begin VB.Form frmPlotProcess
       TabPicture(1)   =   "frmPlotProcess.frx":001C
       Tab(1).ControlEnabled=   0   'False
       Tab(1).Control(0)=   "lbName(19)"
-      Tab(1).Control(0).Enabled=   0   'False
       Tab(1).Control(1)=   "lbPIDValue(6)"
-      Tab(1).Control(1).Enabled=   0   'False
       Tab(1).Control(2)=   "lbName(14)"
-      Tab(1).Control(2).Enabled=   0   'False
       Tab(1).Control(3)=   "lbPIDValue(5)"
-      Tab(1).Control(3).Enabled=   0   'False
       Tab(1).Control(4)=   "lbPIDValue(1)"
-      Tab(1).Control(4).Enabled=   0   'False
       Tab(1).Control(5)=   "lbPIDValue(0)"
-      Tab(1).Control(5).Enabled=   0   'False
       Tab(1).Control(6)=   "lbName(11)"
-      Tab(1).Control(6).Enabled=   0   'False
       Tab(1).Control(7)=   "lbName(10)"
-      Tab(1).Control(7).Enabled=   0   'False
       Tab(1).Control(8)=   "Label2"
-      Tab(1).Control(8).Enabled=   0   'False
       Tab(1).Control(9)=   "lbScanCount"
-      Tab(1).Control(9).Enabled=   0   'False
       Tab(1).Control(10)=   "lbOutput"
-      Tab(1).Control(10).Enabled=   0   'False
       Tab(1).Control(11)=   "Label5"
-      Tab(1).Control(11).Enabled=   0   'False
       Tab(1).ControlCount=   12
       TabCaption(2)   =   "Loop"
       TabPicture(2)   =   "frmPlotProcess.frx":0038
@@ -1579,66 +1599,40 @@ Begin VB.Form frmPlotProcess
       Tab(2).ControlCount=   12
       TabCaption(3)   =   "TCM"
       TabPicture(3)   =   "frmPlotProcess.frx":0054
-      Tab(3).ControlEnabled=   -1  'True
+      Tab(3).ControlEnabled=   0   'False
       Tab(3).Control(0)=   "lbIntensityAz1(3)"
-      Tab(3).Control(0).Enabled=   0   'False
       Tab(3).Control(1)=   "lbIntensityAz(3)"
-      Tab(3).Control(1).Enabled=   0   'False
       Tab(3).Control(2)=   "lbIntensityAz1(2)"
-      Tab(3).Control(2).Enabled=   0   'False
       Tab(3).Control(3)=   "lbIntensityAz(2)"
-      Tab(3).Control(3).Enabled=   0   'False
       Tab(3).Control(4)=   "lbIntensityAz1(1)"
-      Tab(3).Control(4).Enabled=   0   'False
       Tab(3).Control(5)=   "lbIntensityAz(1)"
-      Tab(3).Control(5).Enabled=   0   'False
       Tab(3).Control(6)=   "lbIntensityAz1(0)"
-      Tab(3).Control(6).Enabled=   0   'False
       Tab(3).Control(7)=   "lbIntensityAz(0)"
-      Tab(3).Control(7).Enabled=   0   'False
       Tab(3).Control(8)=   "lbIntensityAz(4)"
-      Tab(3).Control(8).Enabled=   0   'False
       Tab(3).Control(9)=   "lbIntensityAz1(4)"
-      Tab(3).Control(9).Enabled=   0   'False
       Tab(3).Control(10)=   "lbIntensityAz(5)"
-      Tab(3).Control(10).Enabled=   0   'False
       Tab(3).Control(11)=   "lbIntensityAz1(5)"
-      Tab(3).Control(11).Enabled=   0   'False
       Tab(3).Control(12)=   "lbIntensityAz(6)"
-      Tab(3).Control(12).Enabled=   0   'False
       Tab(3).Control(13)=   "lbIntensityAz1(6)"
-      Tab(3).Control(13).Enabled=   0   'False
       Tab(3).Control(14)=   "lbIntensityAz(7)"
-      Tab(3).Control(14).Enabled=   0   'False
       Tab(3).Control(15)=   "lbIntensityAz1(7)"
-      Tab(3).Control(15).Enabled=   0   'False
       Tab(3).Control(16)=   "chkTest"
-      Tab(3).Control(16).Enabled=   0   'False
       Tab(3).Control(17)=   "chkAT"
-      Tab(3).Control(17).Enabled=   0   'False
       Tab(3).Control(18)=   "ChkPower(0)"
-      Tab(3).Control(18).Enabled=   0   'False
       Tab(3).Control(19)=   "ChkPower(1)"
-      Tab(3).Control(19).Enabled=   0   'False
       Tab(3).Control(20)=   "ChkPower(2)"
-      Tab(3).Control(20).Enabled=   0   'False
       Tab(3).Control(21)=   "ChkPower(3)"
-      Tab(3).Control(21).Enabled=   0   'False
       Tab(3).Control(22)=   "ChkPower(4)"
-      Tab(3).Control(22).Enabled=   0   'False
       Tab(3).Control(23)=   "ChkPower(5)"
-      Tab(3).Control(23).Enabled=   0   'False
       Tab(3).Control(24)=   "ChkPower(6)"
-      Tab(3).Control(24).Enabled=   0   'False
       Tab(3).Control(25)=   "ChkPower(7)"
-      Tab(3).Control(25).Enabled=   0   'False
       Tab(3).ControlCount=   26
       Begin VB.TextBox txtGas 
          Alignment       =   2  'Center
          Height          =   390
          Index           =   5
-         Left            =   -73800
-         TabIndex        =   253
+         Left            =   1200
+         TabIndex        =   252
          Text            =   "0.0"
          Top             =   3360
          Width           =   855
@@ -1647,8 +1641,8 @@ Begin VB.Form frmPlotProcess
          Caption         =   "Check1"
          Height          =   270
          Index           =   7
-         Left            =   480
-         TabIndex        =   251
+         Left            =   -74520
+         TabIndex        =   250
          Top             =   3960
          Width           =   255
       End
@@ -1656,8 +1650,8 @@ Begin VB.Form frmPlotProcess
          Caption         =   "Check1"
          Height          =   270
          Index           =   6
-         Left            =   480
-         TabIndex        =   250
+         Left            =   -74520
+         TabIndex        =   249
          Top             =   3490
          Width           =   255
       End
@@ -1665,8 +1659,8 @@ Begin VB.Form frmPlotProcess
          Caption         =   "Check1"
          Height          =   270
          Index           =   5
-         Left            =   480
-         TabIndex        =   249
+         Left            =   -74520
+         TabIndex        =   248
          Top             =   3000
          Width           =   255
       End
@@ -1674,8 +1668,8 @@ Begin VB.Form frmPlotProcess
          Caption         =   "Check1"
          Height          =   270
          Index           =   4
-         Left            =   480
-         TabIndex        =   248
+         Left            =   -74520
+         TabIndex        =   247
          Top             =   2530
          Width           =   255
       End
@@ -1683,8 +1677,8 @@ Begin VB.Form frmPlotProcess
          Caption         =   "Check1"
          Height          =   270
          Index           =   3
-         Left            =   480
-         TabIndex        =   247
+         Left            =   -74520
+         TabIndex        =   246
          Top             =   2050
          Width           =   255
       End
@@ -1692,8 +1686,8 @@ Begin VB.Form frmPlotProcess
          Caption         =   "Check1"
          Height          =   270
          Index           =   2
-         Left            =   480
-         TabIndex        =   246
+         Left            =   -74520
+         TabIndex        =   245
          Top             =   1570
          Width           =   255
       End
@@ -1701,8 +1695,8 @@ Begin VB.Form frmPlotProcess
          Caption         =   "Check1"
          Height          =   270
          Index           =   1
-         Left            =   480
-         TabIndex        =   245
+         Left            =   -74520
+         TabIndex        =   244
          Top             =   1090
          Width           =   255
       End
@@ -1710,26 +1704,26 @@ Begin VB.Form frmPlotProcess
          Caption         =   "Check1"
          Height          =   270
          Index           =   0
-         Left            =   480
-         TabIndex        =   244
+         Left            =   -74520
+         TabIndex        =   243
          Top             =   610
          Width           =   255
       End
       Begin VB.CheckBox chkAT 
          Caption         =   "Auto Tuning"
          Height          =   495
-         Left            =   120
+         Left            =   -74880
          Style           =   1  'Graphical
-         TabIndex        =   243
+         TabIndex        =   242
          Top             =   4320
          Width           =   1455
       End
       Begin VB.CheckBox chkTest 
          Caption         =   "Test"
          Height          =   375
-         Left            =   1800
+         Left            =   -73200
          Style           =   1  'Graphical
-         TabIndex        =   242
+         TabIndex        =   241
          Top             =   4440
          Visible         =   0   'False
          Width           =   1095
@@ -1746,8 +1740,8 @@ Begin VB.Form frmPlotProcess
          EndProperty
          ForeColor       =   &H00000080&
          Height          =   1335
-         Left            =   -74880
-         TabIndex        =   85
+         Left            =   120
+         TabIndex        =   84
          Top             =   3720
          Width           =   2775
          Begin VB.CheckBox chkPurge 
@@ -1755,7 +1749,7 @@ Begin VB.Form frmPlotProcess
             Height          =   495
             Left            =   1440
             Style           =   1  'Graphical
-            TabIndex        =   87
+            TabIndex        =   86
             Top             =   720
             Width           =   1215
          End
@@ -1764,7 +1758,7 @@ Begin VB.Form frmPlotProcess
             Height          =   495
             Left            =   120
             Style           =   1  'Graphical
-            TabIndex        =   86
+            TabIndex        =   85
             Top             =   720
             Width           =   1215
          End
@@ -1773,7 +1767,7 @@ Begin VB.Form frmPlotProcess
             Caption         =   "760"
             Height          =   255
             Left            =   720
-            TabIndex        =   90
+            TabIndex        =   89
             Top             =   240
             Width           =   1335
          End
@@ -1782,7 +1776,7 @@ Begin VB.Form frmPlotProcess
             Height          =   375
             Index           =   2
             Left            =   2160
-            TabIndex        =   89
+            TabIndex        =   88
             Top             =   240
             Width           =   495
          End
@@ -1792,7 +1786,7 @@ Begin VB.Form frmPlotProcess
             Height          =   375
             Index           =   1
             Left            =   120
-            TabIndex        =   88
+            TabIndex        =   87
             Top             =   240
             Width           =   615
          End
@@ -1801,8 +1795,8 @@ Begin VB.Form frmPlotProcess
          Alignment       =   2  'Center
          Height          =   390
          Index           =   3
-         Left            =   -73800
-         TabIndex        =   72
+         Left            =   1200
+         TabIndex        =   71
          Text            =   "0.0"
          Top             =   2460
          Width           =   855
@@ -1811,8 +1805,8 @@ Begin VB.Form frmPlotProcess
          Alignment       =   2  'Center
          Height          =   390
          Index           =   4
-         Left            =   -73800
-         TabIndex        =   71
+         Left            =   1200
+         TabIndex        =   70
          Text            =   "0.0"
          Top             =   2940
          Width           =   855
@@ -1820,8 +1814,8 @@ Begin VB.Form frmPlotProcess
       Begin VB.TextBox txtIntensity 
          Alignment       =   2  'Center
          Height          =   390
-         Left            =   -73800
-         TabIndex        =   62
+         Left            =   1200
+         TabIndex        =   61
          Text            =   "0.00"
          Top             =   540
          Width           =   855
@@ -1830,8 +1824,8 @@ Begin VB.Form frmPlotProcess
          Alignment       =   2  'Center
          Height          =   390
          Index           =   0
-         Left            =   -73800
-         TabIndex        =   61
+         Left            =   1200
+         TabIndex        =   60
          Text            =   "0.0"
          Top             =   1020
          Width           =   855
@@ -1840,8 +1834,8 @@ Begin VB.Form frmPlotProcess
          Alignment       =   2  'Center
          Height          =   390
          Index           =   1
-         Left            =   -73800
-         TabIndex        =   60
+         Left            =   1200
+         TabIndex        =   59
          Text            =   "0.0"
          Top             =   1500
          Width           =   855
@@ -1850,8 +1844,8 @@ Begin VB.Form frmPlotProcess
          Alignment       =   2  'Center
          Height          =   390
          Index           =   2
-         Left            =   -73800
-         TabIndex        =   59
+         Left            =   1200
+         TabIndex        =   58
          Text            =   "0.0"
          Top             =   1980
          Width           =   855
@@ -1860,8 +1854,8 @@ Begin VB.Form frmPlotProcess
          Caption         =   "SLPM"
          Height          =   375
          Index           =   5
-         Left            =   -72840
-         TabIndex        =   254
+         Left            =   2160
+         TabIndex        =   253
          Top             =   3360
          Width           =   735
       End
@@ -1870,8 +1864,8 @@ Begin VB.Form frmPlotProcess
          Caption         =   "NA"
          Height          =   255
          Index           =   5
-         Left            =   -74760
-         TabIndex        =   252
+         Left            =   240
+         TabIndex        =   251
          Top             =   3360
          Width           =   855
       End
@@ -1881,8 +1875,8 @@ Begin VB.Form frmPlotProcess
          ForeColor       =   &H8000000D&
          Height          =   375
          Index           =   7
-         Left            =   1800
-         TabIndex        =   241
+         Left            =   -73200
+         TabIndex        =   240
          Top             =   3960
          Width           =   1095
       End
@@ -1891,8 +1885,8 @@ Begin VB.Form frmPlotProcess
          Caption         =   "Intensity 8:"
          Height          =   270
          Index           =   7
-         Left            =   720
-         TabIndex        =   240
+         Left            =   -74280
+         TabIndex        =   239
          Top             =   3960
          Width           =   1080
       End
@@ -1902,8 +1896,8 @@ Begin VB.Form frmPlotProcess
          ForeColor       =   &H8000000D&
          Height          =   375
          Index           =   6
-         Left            =   1800
-         TabIndex        =   239
+         Left            =   -73200
+         TabIndex        =   238
          Top             =   3480
          Width           =   1095
       End
@@ -1912,8 +1906,8 @@ Begin VB.Form frmPlotProcess
          Caption         =   "Intensity 7:"
          Height          =   270
          Index           =   6
-         Left            =   720
-         TabIndex        =   238
+         Left            =   -74280
+         TabIndex        =   237
          Top             =   3480
          Width           =   1080
       End
@@ -1923,8 +1917,8 @@ Begin VB.Form frmPlotProcess
          ForeColor       =   &H8000000D&
          Height          =   375
          Index           =   5
-         Left            =   1800
-         TabIndex        =   237
+         Left            =   -73200
+         TabIndex        =   236
          Top             =   3000
          Width           =   1095
       End
@@ -1933,8 +1927,8 @@ Begin VB.Form frmPlotProcess
          Caption         =   "Intensity 6:"
          Height          =   270
          Index           =   5
-         Left            =   720
-         TabIndex        =   236
+         Left            =   -74280
+         TabIndex        =   235
          Top             =   3000
          Width           =   1080
       End
@@ -1944,8 +1938,8 @@ Begin VB.Form frmPlotProcess
          ForeColor       =   &H8000000D&
          Height          =   375
          Index           =   4
-         Left            =   1800
-         TabIndex        =   235
+         Left            =   -73200
+         TabIndex        =   234
          Top             =   2520
          Width           =   1095
       End
@@ -1954,8 +1948,8 @@ Begin VB.Form frmPlotProcess
          Caption         =   "Intensity 5:"
          Height          =   270
          Index           =   4
-         Left            =   720
-         TabIndex        =   234
+         Left            =   -74280
+         TabIndex        =   233
          Top             =   2520
          Width           =   1080
       End
@@ -1964,8 +1958,8 @@ Begin VB.Form frmPlotProcess
          Caption         =   "Intensity 1:"
          Height          =   270
          Index           =   0
-         Left            =   720
-         TabIndex        =   233
+         Left            =   -74280
+         TabIndex        =   232
          Top             =   600
          Width           =   1080
       End
@@ -1975,8 +1969,8 @@ Begin VB.Form frmPlotProcess
          ForeColor       =   &H8000000D&
          Height          =   375
          Index           =   0
-         Left            =   1800
-         TabIndex        =   232
+         Left            =   -73200
+         TabIndex        =   231
          Top             =   600
          Width           =   1095
       End
@@ -1985,8 +1979,8 @@ Begin VB.Form frmPlotProcess
          Caption         =   "Intensity 2:"
          Height          =   270
          Index           =   1
-         Left            =   720
-         TabIndex        =   231
+         Left            =   -74280
+         TabIndex        =   230
          Top             =   1080
          Width           =   1080
       End
@@ -1996,8 +1990,8 @@ Begin VB.Form frmPlotProcess
          ForeColor       =   &H8000000D&
          Height          =   375
          Index           =   1
-         Left            =   1800
-         TabIndex        =   230
+         Left            =   -73200
+         TabIndex        =   229
          Top             =   1080
          Width           =   1095
       End
@@ -2006,8 +2000,8 @@ Begin VB.Form frmPlotProcess
          Caption         =   "Intensity 3:"
          Height          =   270
          Index           =   2
-         Left            =   720
-         TabIndex        =   229
+         Left            =   -74280
+         TabIndex        =   228
          Top             =   1560
          Width           =   1080
       End
@@ -2017,8 +2011,8 @@ Begin VB.Form frmPlotProcess
          ForeColor       =   &H8000000D&
          Height          =   375
          Index           =   2
-         Left            =   1800
-         TabIndex        =   228
+         Left            =   -73200
+         TabIndex        =   227
          Top             =   1560
          Width           =   1095
       End
@@ -2027,8 +2021,8 @@ Begin VB.Form frmPlotProcess
          Caption         =   "Intensity 4:"
          Height          =   270
          Index           =   3
-         Left            =   720
-         TabIndex        =   227
+         Left            =   -74280
+         TabIndex        =   226
          Top             =   2040
          Width           =   1080
       End
@@ -2038,8 +2032,8 @@ Begin VB.Form frmPlotProcess
          ForeColor       =   &H8000000D&
          Height          =   375
          Index           =   3
-         Left            =   1800
-         TabIndex        =   226
+         Left            =   -73200
+         TabIndex        =   225
          Top             =   2040
          Width           =   1095
       End
@@ -2049,7 +2043,7 @@ Begin VB.Form frmPlotProcess
          Height          =   270
          Index           =   5
          Left            =   -74880
-         TabIndex        =   131
+         TabIndex        =   130
          Top             =   3300
          Width           =   1080
       End
@@ -2060,7 +2054,7 @@ Begin VB.Form frmPlotProcess
          Height          =   375
          Index           =   5
          Left            =   -73680
-         TabIndex        =   130
+         TabIndex        =   129
          Top             =   3300
          Width           =   1335
       End
@@ -2071,7 +2065,7 @@ Begin VB.Form frmPlotProcess
          Height          =   375
          Index           =   4
          Left            =   -73680
-         TabIndex        =   129
+         TabIndex        =   128
          Top             =   2820
          Width           =   1335
       End
@@ -2081,7 +2075,7 @@ Begin VB.Form frmPlotProcess
          Height          =   270
          Index           =   4
          Left            =   -74880
-         TabIndex        =   128
+         TabIndex        =   127
          Top             =   2820
          Width           =   1080
       End
@@ -2092,7 +2086,7 @@ Begin VB.Form frmPlotProcess
          Height          =   375
          Index           =   3
          Left            =   -73680
-         TabIndex        =   127
+         TabIndex        =   126
          Top             =   2340
          Width           =   1335
       End
@@ -2102,7 +2096,7 @@ Begin VB.Form frmPlotProcess
          Height          =   270
          Index           =   3
          Left            =   -74880
-         TabIndex        =   126
+         TabIndex        =   125
          Top             =   2340
          Width           =   1080
       End
@@ -2113,7 +2107,7 @@ Begin VB.Form frmPlotProcess
          Height          =   375
          Index           =   2
          Left            =   -73680
-         TabIndex        =   125
+         TabIndex        =   124
          Top             =   1860
          Width           =   1335
       End
@@ -2123,7 +2117,7 @@ Begin VB.Form frmPlotProcess
          Height          =   270
          Index           =   2
          Left            =   -74880
-         TabIndex        =   124
+         TabIndex        =   123
          Top             =   1860
          Width           =   1080
       End
@@ -2134,7 +2128,7 @@ Begin VB.Form frmPlotProcess
          Height          =   375
          Index           =   1
          Left            =   -73680
-         TabIndex        =   123
+         TabIndex        =   122
          Top             =   1380
          Width           =   1335
       End
@@ -2144,7 +2138,7 @@ Begin VB.Form frmPlotProcess
          Height          =   270
          Index           =   1
          Left            =   -74880
-         TabIndex        =   122
+         TabIndex        =   121
          Top             =   1380
          Width           =   1080
       End
@@ -2155,7 +2149,7 @@ Begin VB.Form frmPlotProcess
          Height          =   375
          Index           =   0
          Left            =   -73680
-         TabIndex        =   121
+         TabIndex        =   120
          Top             =   900
          Width           =   1335
       End
@@ -2165,7 +2159,7 @@ Begin VB.Form frmPlotProcess
          Height          =   270
          Index           =   0
          Left            =   -74880
-         TabIndex        =   120
+         TabIndex        =   119
          Top             =   900
          Width           =   1080
       End
@@ -2173,7 +2167,7 @@ Begin VB.Form frmPlotProcess
          Caption         =   "Output"
          Height          =   255
          Left            =   -74760
-         TabIndex        =   115
+         TabIndex        =   114
          Top             =   3780
          Width           =   1095
       End
@@ -2183,7 +2177,7 @@ Begin VB.Form frmPlotProcess
          ForeColor       =   &H8000000D&
          Height          =   255
          Left            =   -73680
-         TabIndex        =   114
+         TabIndex        =   113
          Top             =   3780
          Width           =   1095
       End
@@ -2193,7 +2187,7 @@ Begin VB.Form frmPlotProcess
          ForeColor       =   &H8000000D&
          Height          =   255
          Left            =   -73680
-         TabIndex        =   113
+         TabIndex        =   112
          Top             =   4260
          Width           =   1095
       End
@@ -2201,7 +2195,7 @@ Begin VB.Form frmPlotProcess
          Caption         =   "ScanLoop"
          Height          =   255
          Left            =   -74760
-         TabIndex        =   112
+         TabIndex        =   111
          Top             =   4260
          Width           =   1095
       End
@@ -2209,8 +2203,8 @@ Begin VB.Form frmPlotProcess
          Caption         =   "SLPM"
          Height          =   375
          Index           =   4
-         Left            =   -72840
-         TabIndex        =   91
+         Left            =   2160
+         TabIndex        =   90
          Top             =   2940
          Width           =   735
       End
@@ -2219,8 +2213,8 @@ Begin VB.Form frmPlotProcess
          Caption         =   "NA"
          Height          =   255
          Index           =   3
-         Left            =   -74760
-         TabIndex        =   75
+         Left            =   240
+         TabIndex        =   74
          Top             =   2460
          Width           =   855
       End
@@ -2229,8 +2223,8 @@ Begin VB.Form frmPlotProcess
          Caption         =   "NA"
          Height          =   255
          Index           =   4
-         Left            =   -74760
-         TabIndex        =   74
+         Left            =   240
+         TabIndex        =   73
          Top             =   2940
          Width           =   855
       End
@@ -2238,16 +2232,16 @@ Begin VB.Form frmPlotProcess
          Caption         =   "SLPM"
          Height          =   375
          Index           =   3
-         Left            =   -72840
-         TabIndex        =   73
+         Left            =   2160
+         TabIndex        =   72
          Top             =   2460
          Width           =   735
       End
       Begin VB.Label Label3 
          Caption         =   "%"
          Height          =   255
-         Left            =   -72600
-         TabIndex        =   70
+         Left            =   2400
+         TabIndex        =   69
          Top             =   540
          Width           =   255
       End
@@ -2255,9 +2249,9 @@ Begin VB.Form frmPlotProcess
          Caption         =   "Intensity"
          Height          =   375
          Index           =   0
-         Left            =   -74760
-         TabIndex        =   69
-         Top             =   540
+         Left            =   240
+         TabIndex        =   68
+         Top             =   600
          Width           =   975
       End
       Begin VB.Label lbNameMFC 
@@ -2265,8 +2259,8 @@ Begin VB.Form frmPlotProcess
          Caption         =   "NA"
          Height          =   375
          Index           =   0
-         Left            =   -74760
-         TabIndex        =   68
+         Left            =   240
+         TabIndex        =   67
          Top             =   1020
          Width           =   855
       End
@@ -2275,8 +2269,8 @@ Begin VB.Form frmPlotProcess
          Caption         =   "NA"
          Height          =   375
          Index           =   1
-         Left            =   -74760
-         TabIndex        =   67
+         Left            =   240
+         TabIndex        =   66
          Top             =   1500
          Width           =   855
       End
@@ -2284,8 +2278,8 @@ Begin VB.Form frmPlotProcess
          Caption         =   "SLPM"
          Height          =   375
          Index           =   0
-         Left            =   -72840
-         TabIndex        =   66
+         Left            =   2160
+         TabIndex        =   65
          Top             =   1020
          Width           =   735
       End
@@ -2293,8 +2287,8 @@ Begin VB.Form frmPlotProcess
          Caption         =   "SLPM"
          Height          =   375
          Index           =   1
-         Left            =   -72840
-         TabIndex        =   65
+         Left            =   2160
+         TabIndex        =   64
          Top             =   1500
          Width           =   735
       End
@@ -2302,8 +2296,8 @@ Begin VB.Form frmPlotProcess
          Caption         =   "SLPM"
          Height          =   375
          Index           =   2
-         Left            =   -72840
-         TabIndex        =   64
+         Left            =   2160
+         TabIndex        =   63
          Top             =   1980
          Width           =   735
       End
@@ -2312,8 +2306,8 @@ Begin VB.Form frmPlotProcess
          Caption         =   "NA"
          Height          =   255
          Index           =   2
-         Left            =   -74760
-         TabIndex        =   63
+         Left            =   240
+         TabIndex        =   62
          Top             =   1980
          Width           =   855
       End
@@ -2323,7 +2317,7 @@ Begin VB.Form frmPlotProcess
          Height          =   270
          Index           =   10
          Left            =   -74880
-         TabIndex        =   58
+         TabIndex        =   57
          Top             =   1620
          Width           =   750
       End
@@ -2333,7 +2327,7 @@ Begin VB.Form frmPlotProcess
          Height          =   270
          Index           =   11
          Left            =   -74880
-         TabIndex        =   57
+         TabIndex        =   56
          Top             =   900
          Width           =   1275
       End
@@ -2343,7 +2337,7 @@ Begin VB.Form frmPlotProcess
          Height          =   255
          Index           =   0
          Left            =   -73320
-         TabIndex        =   56
+         TabIndex        =   55
          Top             =   900
          Width           =   1215
       End
@@ -2353,7 +2347,7 @@ Begin VB.Form frmPlotProcess
          Height          =   255
          Index           =   1
          Left            =   -73320
-         TabIndex        =   55
+         TabIndex        =   54
          Top             =   1620
          Width           =   1215
       End
@@ -2363,7 +2357,7 @@ Begin VB.Form frmPlotProcess
          Height          =   255
          Index           =   5
          Left            =   -73320
-         TabIndex        =   54
+         TabIndex        =   53
          Top             =   1980
          Width           =   1215
       End
@@ -2373,7 +2367,7 @@ Begin VB.Form frmPlotProcess
          Height          =   270
          Index           =   14
          Left            =   -74880
-         TabIndex        =   53
+         TabIndex        =   52
          Top             =   1980
          Width           =   885
       End
@@ -2383,7 +2377,7 @@ Begin VB.Form frmPlotProcess
          Height          =   255
          Index           =   6
          Left            =   -73320
-         TabIndex        =   52
+         TabIndex        =   51
          Top             =   1260
          Width           =   1215
       End
@@ -2393,7 +2387,7 @@ Begin VB.Form frmPlotProcess
          Height          =   270
          Index           =   19
          Left            =   -74880
-         TabIndex        =   51
+         TabIndex        =   50
          Top             =   1260
          Width           =   1410
       End
@@ -2416,7 +2410,7 @@ Begin VB.Form frmPlotProcess
       Caption         =   "Frame1"
       Height          =   495
       Left            =   720
-      TabIndex        =   7
+      TabIndex        =   6
       Top             =   480
       Width           =   5655
       Begin VB.CheckBox chkShowLine 
@@ -2424,7 +2418,7 @@ Begin VB.Form frmPlotProcess
          Height          =   270
          Index           =   4
          Left            =   4560
-         TabIndex        =   32
+         TabIndex        =   31
          Top             =   0
          Value           =   1  'Checked
          Width           =   255
@@ -2434,7 +2428,7 @@ Begin VB.Form frmPlotProcess
          Height          =   270
          Index           =   3
          Left            =   3480
-         TabIndex        =   31
+         TabIndex        =   30
          Top             =   0
          Value           =   1  'Checked
          Width           =   255
@@ -2444,7 +2438,7 @@ Begin VB.Form frmPlotProcess
          Height          =   270
          Index           =   2
          Left            =   2400
-         TabIndex        =   30
+         TabIndex        =   29
          Top             =   0
          Value           =   1  'Checked
          Width           =   255
@@ -2454,7 +2448,7 @@ Begin VB.Form frmPlotProcess
          Height          =   270
          Index           =   1
          Left            =   1320
-         TabIndex        =   29
+         TabIndex        =   28
          Top             =   0
          Value           =   1  'Checked
          Width           =   255
@@ -2464,7 +2458,7 @@ Begin VB.Form frmPlotProcess
          Height          =   270
          Index           =   0
          Left            =   0
-         TabIndex        =   28
+         TabIndex        =   27
          Top             =   0
          Value           =   1  'Checked
          Width           =   255
@@ -2485,7 +2479,7 @@ Begin VB.Form frmPlotProcess
          Index           =   8
          Left            =   4800
          Style           =   1  'Graphical
-         TabIndex        =   23
+         TabIndex        =   22
          Top             =   0
          Value           =   2  'Grayed
          Width           =   735
@@ -2506,7 +2500,7 @@ Begin VB.Form frmPlotProcess
          Index           =   6
          Left            =   5760
          Style           =   1  'Graphical
-         TabIndex        =   22
+         TabIndex        =   21
          Top             =   0
          Value           =   2  'Grayed
          Visible         =   0   'False
@@ -2528,7 +2522,7 @@ Begin VB.Form frmPlotProcess
          Index           =   2
          Left            =   3720
          Style           =   1  'Graphical
-         TabIndex        =   21
+         TabIndex        =   20
          Top             =   360
          Value           =   2  'Grayed
          Visible         =   0   'False
@@ -2550,7 +2544,7 @@ Begin VB.Form frmPlotProcess
          Index           =   1
          Left            =   1560
          Style           =   1  'Graphical
-         TabIndex        =   12
+         TabIndex        =   11
          Top             =   0
          Value           =   2  'Grayed
          Width           =   735
@@ -2571,7 +2565,7 @@ Begin VB.Form frmPlotProcess
          Index           =   0
          Left            =   240
          Style           =   1  'Graphical
-         TabIndex        =   11
+         TabIndex        =   10
          Top             =   0
          Value           =   2  'Grayed
          Width           =   975
@@ -2592,7 +2586,7 @@ Begin VB.Form frmPlotProcess
          Index           =   3
          Left            =   2640
          Style           =   1  'Graphical
-         TabIndex        =   10
+         TabIndex        =   9
          Top             =   0
          Value           =   2  'Grayed
          Width           =   735
@@ -2613,7 +2607,7 @@ Begin VB.Form frmPlotProcess
          Index           =   4
          Left            =   3720
          Style           =   1  'Graphical
-         TabIndex        =   9
+         TabIndex        =   8
          Top             =   0
          Value           =   2  'Grayed
          Width           =   735
@@ -2634,7 +2628,7 @@ Begin VB.Form frmPlotProcess
          Index           =   5
          Left            =   5640
          Style           =   1  'Graphical
-         TabIndex        =   8
+         TabIndex        =   7
          Top             =   480
          Value           =   2  'Grayed
          Visible         =   0   'False
@@ -2653,7 +2647,7 @@ Begin VB.Form frmPlotProcess
          Height          =   270
          Index           =   7
          Left            =   2400
-         TabIndex        =   92
+         TabIndex        =   91
          Top             =   2880
          Width           =   255
       End
@@ -2662,7 +2656,7 @@ Begin VB.Form frmPlotProcess
          Height          =   270
          Index           =   6
          Left            =   2400
-         TabIndex        =   49
+         TabIndex        =   48
          Top             =   2520
          Width           =   255
       End
@@ -2671,7 +2665,7 @@ Begin VB.Form frmPlotProcess
          Height          =   270
          Index           =   5
          Left            =   2400
-         TabIndex        =   38
+         TabIndex        =   37
          Top             =   2160
          Width           =   255
       End
@@ -2680,7 +2674,7 @@ Begin VB.Form frmPlotProcess
          Height          =   270
          Index           =   4
          Left            =   2400
-         TabIndex        =   37
+         TabIndex        =   36
          Top             =   1800
          Width           =   255
       End
@@ -2689,7 +2683,7 @@ Begin VB.Form frmPlotProcess
          Height          =   270
          Index           =   3
          Left            =   2400
-         TabIndex        =   36
+         TabIndex        =   35
          Top             =   1440
          Width           =   255
       End
@@ -2698,7 +2692,7 @@ Begin VB.Form frmPlotProcess
          Height          =   270
          Index           =   2
          Left            =   2400
-         TabIndex        =   35
+         TabIndex        =   34
          Top             =   1080
          Width           =   255
       End
@@ -2707,7 +2701,7 @@ Begin VB.Form frmPlotProcess
          Height          =   270
          Index           =   1
          Left            =   2400
-         TabIndex        =   34
+         TabIndex        =   33
          Top             =   720
          Width           =   255
       End
@@ -2716,7 +2710,7 @@ Begin VB.Form frmPlotProcess
          Height          =   270
          Index           =   0
          Left            =   2400
-         TabIndex        =   33
+         TabIndex        =   32
          Top             =   360
          Value           =   1  'Checked
          Visible         =   0   'False
@@ -2741,7 +2735,7 @@ Begin VB.Form frmPlotProcess
          Height          =   375
          Index           =   7
          Left            =   240
-         TabIndex        =   94
+         TabIndex        =   93
          Top             =   2880
          Width           =   1095
       End
@@ -2764,7 +2758,7 @@ Begin VB.Form frmPlotProcess
          Height          =   375
          Index           =   7
          Left            =   1320
-         TabIndex        =   93
+         TabIndex        =   92
          Top             =   2880
          Width           =   975
       End
@@ -2787,7 +2781,7 @@ Begin VB.Form frmPlotProcess
          Height          =   375
          Index           =   1
          Left            =   240
-         TabIndex        =   48
+         TabIndex        =   47
          Top             =   720
          Width           =   1095
       End
@@ -2810,7 +2804,7 @@ Begin VB.Form frmPlotProcess
          Height          =   375
          Index           =   6
          Left            =   1320
-         TabIndex        =   26
+         TabIndex        =   25
          Top             =   2520
          Width           =   975
       End
@@ -2833,7 +2827,7 @@ Begin VB.Form frmPlotProcess
          Height          =   375
          Index           =   5
          Left            =   1320
-         TabIndex        =   25
+         TabIndex        =   24
          Top             =   2160
          Width           =   975
       End
@@ -2856,7 +2850,7 @@ Begin VB.Form frmPlotProcess
          Height          =   375
          Index           =   6
          Left            =   240
-         TabIndex        =   24
+         TabIndex        =   23
          Top             =   2520
          Width           =   1095
       End
@@ -2879,7 +2873,7 @@ Begin VB.Form frmPlotProcess
          Height          =   375
          Index           =   5
          Left            =   240
-         TabIndex        =   20
+         TabIndex        =   19
          Top             =   2160
          Width           =   1095
       End
@@ -2902,7 +2896,7 @@ Begin VB.Form frmPlotProcess
          Height          =   375
          Index           =   4
          Left            =   1320
-         TabIndex        =   19
+         TabIndex        =   18
          Top             =   1800
          Width           =   975
       End
@@ -2925,7 +2919,7 @@ Begin VB.Form frmPlotProcess
          Height          =   375
          Index           =   1
          Left            =   1320
-         TabIndex        =   18
+         TabIndex        =   17
          Top             =   720
          Width           =   975
       End
@@ -2948,7 +2942,7 @@ Begin VB.Form frmPlotProcess
          Height          =   375
          Index           =   2
          Left            =   240
-         TabIndex        =   17
+         TabIndex        =   16
          Top             =   1080
          Width           =   1095
       End
@@ -2971,7 +2965,7 @@ Begin VB.Form frmPlotProcess
          Height          =   375
          Index           =   2
          Left            =   1320
-         TabIndex        =   16
+         TabIndex        =   15
          Top             =   1080
          Width           =   975
       End
@@ -2994,7 +2988,7 @@ Begin VB.Form frmPlotProcess
          Height          =   375
          Index           =   3
          Left            =   240
-         TabIndex        =   15
+         TabIndex        =   14
          Top             =   1440
          Width           =   1095
       End
@@ -3017,7 +3011,7 @@ Begin VB.Form frmPlotProcess
          Height          =   375
          Index           =   3
          Left            =   1320
-         TabIndex        =   14
+         TabIndex        =   13
          Top             =   1440
          Width           =   975
       End
@@ -3040,7 +3034,7 @@ Begin VB.Form frmPlotProcess
          Height          =   375
          Index           =   4
          Left            =   240
-         TabIndex        =   13
+         TabIndex        =   12
          Top             =   1800
          Width           =   1095
       End
@@ -3132,7 +3126,7 @@ Begin VB.Form frmPlotProcess
             ForeColor       =   &H0000FF00&
             Height          =   2415
             Left            =   4560
-            TabIndex        =   39
+            TabIndex        =   38
             Top             =   960
             Visible         =   0   'False
             Width           =   5655
@@ -3142,7 +3136,7 @@ Begin VB.Form frmPlotProcess
                ForeColor       =   &H0000FF00&
                Height          =   375
                Left            =   3240
-               TabIndex        =   47
+               TabIndex        =   46
                Top             =   480
                Width           =   2295
             End
@@ -3153,7 +3147,7 @@ Begin VB.Form frmPlotProcess
                Height          =   375
                Index           =   3
                Left            =   2160
-               TabIndex        =   46
+               TabIndex        =   45
                Top             =   480
                Width           =   1095
             End
@@ -3163,7 +3157,7 @@ Begin VB.Form frmPlotProcess
                ForeColor       =   &H0000FF00&
                Height          =   375
                Left            =   1320
-               TabIndex        =   45
+               TabIndex        =   44
                Top             =   1800
                Width           =   3735
             End
@@ -3173,7 +3167,7 @@ Begin VB.Form frmPlotProcess
                ForeColor       =   &H0000FF00&
                Height          =   855
                Left            =   1320
-               TabIndex        =   44
+               TabIndex        =   43
                Top             =   960
                Width           =   3735
             End
@@ -3183,7 +3177,7 @@ Begin VB.Form frmPlotProcess
                ForeColor       =   &H0000FF00&
                Height          =   375
                Left            =   1320
-               TabIndex        =   43
+               TabIndex        =   42
                Top             =   480
                Width           =   615
             End
@@ -3194,7 +3188,7 @@ Begin VB.Form frmPlotProcess
                Height          =   375
                Index           =   2
                Left            =   240
-               TabIndex        =   42
+               TabIndex        =   41
                Top             =   1800
                Width           =   1095
             End
@@ -3205,7 +3199,7 @@ Begin VB.Form frmPlotProcess
                Height          =   375
                Index           =   1
                Left            =   240
-               TabIndex        =   41
+               TabIndex        =   40
                Top             =   960
                Width           =   1095
             End
@@ -3216,7 +3210,7 @@ Begin VB.Form frmPlotProcess
                Height          =   375
                Index           =   0
                Left            =   240
-               TabIndex        =   40
+               TabIndex        =   39
                Top             =   480
                Width           =   1095
             End
@@ -3233,19 +3227,9 @@ Begin VB.Form frmPlotProcess
             EndProperty
             Height          =   495
             Left            =   6000
-            TabIndex        =   27
+            TabIndex        =   26
             Top             =   120
             Width           =   3975
-         End
-         Begin VB.Label lbSec 
-            AutoSize        =   -1  'True
-            Caption         =   "0"
-            Height          =   270
-            Left            =   1920
-            TabIndex        =   6
-            Top             =   120
-            Visible         =   0   'False
-            Width           =   135
          End
          Begin VB.Label lbTemp 
             AutoSize        =   -1  'True
@@ -3593,7 +3577,6 @@ Private Sub Form_Load()
             lbCT(i).Visible = False
         Next i
     End If
-    
 End Sub
 
 Public Function Plot_ProcessTable(ByVal StartPic As Long, ByVal EndPic As Long, objPic() As PictureBox) As Boolean
@@ -4369,6 +4352,10 @@ Public Sub ShowStatus()
     lbVacuum.BackColor = IIf(SysDI.IsChamberGaugeL = 0, &HFF00&, &H8000000F)
     lbVacuum.Caption = IIf(Para.useTPump = 1, Format(Kernel.sngPressure, "0.000000"), Format(Kernel.sngPressure, "0.000"))
     
+    If GbTestMode_Switch = 1 And gblngAI_Vacuum_Gauge2 >= 0 Then
+     lbVacuum2.BackColor = IIf(SysDI.IsChamberGaugeL = 0, &HFF00&, &H8000000F)
+     lbVacuum2.Caption = IIf(Para.useTPump = 1, Format(Kernel.sngPressure2, "0.000000"), Format(Kernel.sngPressure2, "0.000"))
+    End If
     
     If Kernel.IsAlarm = 0 Then
         fraProcessChart.BackColor = IIf(Kernel.IsRun = 0, &H8000000F, &HFF00&)

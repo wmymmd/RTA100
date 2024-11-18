@@ -22,6 +22,7 @@ Begin VB.Form frmPlotProcessLog
    MDIChild        =   -1  'True
    ScaleHeight     =   10935
    ScaleWidth      =   18885
+   Visible         =   0   'False
    WindowState     =   2  'Maximized
    Begin VB.TextBox TxtRecipeInfo 
       BeginProperty Font 

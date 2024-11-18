@@ -186,6 +186,7 @@ Public gblngAI_MFC_Read(GB_GAS_MAX)     As Long
 'Public gblngAI_MFC_Read3     As Long
 'Public gblngAI_MFC_Read4     As Long
 Public gblngAI_Vacuum_Gauge  As Long
+Public gblngAI_Vacuum_Gauge2  As Long
 Public gblngAI_Vacuum_Gauge_APC  As Long
 Public gblngAI_TC_Cvt1       As Long
 Public gblngAI_TC_Cvt2       As Long
@@ -536,6 +537,17 @@ On Error GoTo ERRLINE:
     Else
         Kernel.sngPressure = 760
     End If
+    
+    If gblngAI_Vacuum_Gauge2 >= 0 Then
+        Kernel.sngPressure2 = AI2Vacuum(SysAI.AvgValue(gblngAI_Vacuum_Gauge2))
+        If SysAI.AvgValue(gblngAI_Vacuum_Gauge2) < 0 Then
+        ShowAlarmFlash 31
+        End If
+    Else
+        Kernel.sngPressure2 = 760
+    End If
+    
+    
     If gbintTCO2 >= 0 Then
         Kernel.sngOxygen = Kernel.sngTC(gbintTCO2)
     Else

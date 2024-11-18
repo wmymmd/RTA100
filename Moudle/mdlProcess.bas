@@ -614,6 +614,15 @@ Public Function Process_RampUp() As Boolean
     
     
     On Error GoTo ERRLINE
+        
+    '寫入SCR一次
+'    Dim bExecuted As Boolean
+'    If Not bExecuted1 Then
+'        If Para.RtaType = 9 And IsUsedSCR = 1 Then
+'            frmModBusRtu.WriteRamupSCR
+'        End If
+'        bExecuted1 = True
+'    End If
     
     lngGetTime = timeGetTime
     CurrProc.lngPrevTime = CurrProc.lngCurrentTime
@@ -824,6 +833,15 @@ Public Function Process_Hold() As Boolean
     CurrProc.lngPrevTime = CurrProc.lngCurrentTime
     CurrProc.lngCurrentTime = lngGetTime
     Kernel.lngCurrStepCount = (gbdblProcessTimeStamp(CurrProc.intStep) - lngGetTime) / 1000
+    
+    '寫入SCR一次
+   
+'    If Not bExecuted2 Then
+'        If Para.RtaType = 9 And IsUsedSCR = 1 Then
+'            frmModBusRtu.WriteHoldSCR
+'        End If
+'        bExecuted2 = True
+'    End If
     
     If Kernel.IsRun = 0 Then
         Call KillTimer(mdifrmRTP.hwnd, TIMER_EVENT_HOLD_ID)
@@ -1360,6 +1378,7 @@ Public Sub RecordProcessData()
     gbsngDrawData(21) = Format(gbsngOxygenPPM, "0.000")
     gbsngDrawData(22) = Format(Kernel.sngTC(6), "0.000")
     gbsngDrawData(23) = Format(Kernel.sngTC(7), "0.000")
+    If GbTestMode_Switch = 1 And gblngAI_Vacuum_Gauge2 >= 0 Then gbsngDrawData(24) = Format(Kernel.sngPressure2, "0.000")
     If Para.UseMTC = 1 Then
         For i = 24 To 31
             gbsngDrawData(i) = Format(Kernel.sngTC(i - 16), "0.000")

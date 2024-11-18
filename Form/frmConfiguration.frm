@@ -6,7 +6,7 @@ Object = "{648A5603-2C6E-101B-82B6-000000000014}#1.1#0"; "MSCOMM32.OCX"
 Object = "{0ECD9B60-23AA-11D0-B351-00A0C9055D8E}#6.0#0"; "MSHFLXGD.OCX"
 Begin VB.Form frmConfiguration 
    Caption         =   "Configuration"
-   ClientHeight    =   10110
+   ClientHeight    =   10815
    ClientLeft      =   60
    ClientTop       =   450
    ClientWidth     =   15240
@@ -23,7 +23,7 @@ Begin VB.Form frmConfiguration
    EndProperty
    LinkTopic       =   "Form1"
    MDIChild        =   -1  'True
-   ScaleHeight     =   10110
+   ScaleHeight     =   10815
    ScaleWidth      =   15240
    WindowState     =   2  'Maximized
    Begin VB.CommandButton Activate 
@@ -184,16 +184,16 @@ Begin VB.Form frmConfiguration
       Width           =   1455
    End
    Begin TabDlg.SSTab tabConfiguration 
-      Height          =   9855
+      Height          =   10575
       Left            =   120
       TabIndex        =   0
       Top             =   120
       Width           =   13215
       _ExtentX        =   23310
-      _ExtentY        =   17383
+      _ExtentY        =   18653
       _Version        =   393216
       Tabs            =   7
-      Tab             =   1
+      Tab             =   2
       TabsPerRow      =   7
       TabHeight       =   1058
       ForeColor       =   8388608
@@ -213,50 +213,58 @@ Begin VB.Form frmConfiguration
       Tab(0).ControlCount=   1
       TabCaption(1)   =   "DIO"
       TabPicture(1)   =   "frmConfiguration.frx":0020
-      Tab(1).ControlEnabled=   -1  'True
-      Tab(1).Control(0)=   "fraDI"
-      Tab(1).Control(0).Enabled=   0   'False
-      Tab(1).Control(1)=   "fraDO"
-      Tab(1).Control(1).Enabled=   0   'False
+      Tab(1).ControlEnabled=   0   'False
+      Tab(1).Control(0)=   "fraDO"
+      Tab(1).Control(1)=   "fraDI"
       Tab(1).ControlCount=   2
       TabCaption(2)   =   "AIO"
       TabPicture(2)   =   "frmConfiguration.frx":003C
-      Tab(2).ControlEnabled=   0   'False
+      Tab(2).ControlEnabled=   -1  'True
       Tab(2).Control(0)=   "fraAI"
+      Tab(2).Control(0).Enabled=   0   'False
       Tab(2).Control(1)=   "fraAO"
+      Tab(2).Control(1).Enabled=   0   'False
       Tab(2).ControlCount=   2
       TabCaption(3)   =   "Parameter Advance I"
       TabPicture(3)   =   "frmConfiguration.frx":0058
       Tab(3).ControlEnabled=   0   'False
       Tab(3).Control(0)=   "Frame6"
+      Tab(3).Control(0).Enabled=   0   'False
       Tab(3).Control(1)=   "Frame7"
+      Tab(3).Control(1).Enabled=   0   'False
       Tab(3).Control(2)=   "Frame5"
+      Tab(3).Control(2).Enabled=   0   'False
       Tab(3).Control(3)=   "Frame2"
+      Tab(3).Control(3).Enabled=   0   'False
       Tab(3).Control(4)=   "fraSmoothCurve"
+      Tab(3).Control(4).Enabled=   0   'False
       Tab(3).ControlCount=   5
       TabCaption(4)   =   "Parameter Advance II"
       TabPicture(4)   =   "frmConfiguration.frx":0074
       Tab(4).ControlEnabled=   0   'False
       Tab(4).Control(0)=   "Frame9"
+      Tab(4).Control(0).Enabled=   0   'False
       Tab(4).Control(1)=   "Frame10"
+      Tab(4).Control(1).Enabled=   0   'False
       Tab(4).Control(2)=   "Frame11"
+      Tab(4).Control(2).Enabled=   0   'False
       Tab(4).ControlCount=   3
       TabCaption(5)   =   "Parameter Advance III"
       TabPicture(5)   =   "frmConfiguration.frx":0090
       Tab(5).ControlEnabled=   0   'False
-      Tab(5).Control(0)=   "Frame25"
-      Tab(5).Control(1)=   "Frame24"
-      Tab(5).Control(2)=   "Frame23"
+      Tab(5).Control(0)=   "Frame8"
+      Tab(5).Control(1)=   "fraUniformity"
+      Tab(5).Control(2)=   "Frame14"
       Tab(5).Control(3)=   "Frame21"
-      Tab(5).Control(4)=   "Frame14"
-      Tab(5).Control(5)=   "fraUniformity"
-      Tab(5).Control(6)=   "Frame8"
+      Tab(5).Control(4)=   "Frame23"
+      Tab(5).Control(5)=   "Frame24"
+      Tab(5).Control(6)=   "Frame25"
       Tab(5).ControlCount=   7
       TabCaption(6)   =   "TC Module"
       TabPicture(6)   =   "frmConfiguration.frx":00AC
       Tab(6).ControlEnabled=   0   'False
-      Tab(6).Control(0)=   "Frame13"
-      Tab(6).Control(1)=   "fraAdvDaqAI"
+      Tab(6).Control(0)=   "fraAdvDaqAI"
+      Tab(6).Control(1)=   "Frame13"
       Tab(6).ControlCount=   2
       Begin VB.Frame Frame25 
          Caption         =   "燈管設定"
@@ -683,37 +691,37 @@ Begin VB.Form frmConfiguration
          TabCaption(1)   =   "Robot"
          TabPicture(1)   =   "frmConfiguration.frx":01EC
          Tab(1).ControlEnabled=   0   'False
-         Tab(1).Control(0)=   "lbName(164)"
-         Tab(1).Control(1)=   "lbName(165)"
-         Tab(1).Control(2)=   "lbName(166)"
-         Tab(1).Control(3)=   "lbName(167)"
-         Tab(1).Control(4)=   "lbName(168)"
-         Tab(1).Control(5)=   "fgTeach"
-         Tab(1).Control(6)=   "txtRobotPort"
-         Tab(1).Control(7)=   "Frame18"
-         Tab(1).Control(8)=   "Frame19"
-         Tab(1).Control(9)=   "Text1"
-         Tab(1).Control(10)=   "Text2"
-         Tab(1).Control(11)=   "txtTeachIndex"
-         Tab(1).Control(12)=   "txtWriteTeach(0)"
-         Tab(1).Control(13)=   "Command5"
-         Tab(1).Control(14)=   "Command10"
+         Tab(1).Control(0)=   "Command15"
+         Tab(1).Control(1)=   "Command14"
+         Tab(1).Control(2)=   "Command13"
+         Tab(1).Control(3)=   "txtPlaceH"
+         Tab(1).Control(4)=   "txtPickH"
+         Tab(1).Control(5)=   "Frame20"
+         Tab(1).Control(6)=   "txtCurrPos(3)"
+         Tab(1).Control(7)=   "txtCurrPos(2)"
+         Tab(1).Control(8)=   "txtCurrPos(1)"
+         Tab(1).Control(9)=   "txtWriteTeach(3)"
+         Tab(1).Control(10)=   "txtWriteTeach(2)"
+         Tab(1).Control(11)=   "txtWriteTeach(1)"
+         Tab(1).Control(12)=   "Command12"
+         Tab(1).Control(13)=   "Command11"
+         Tab(1).Control(14)=   "txtCurrPos(0)"
          Tab(1).Control(15)=   "Text8"
-         Tab(1).Control(16)=   "txtCurrPos(0)"
-         Tab(1).Control(17)=   "Command11"
-         Tab(1).Control(18)=   "Command12"
-         Tab(1).Control(19)=   "txtWriteTeach(1)"
-         Tab(1).Control(20)=   "txtWriteTeach(2)"
-         Tab(1).Control(21)=   "txtWriteTeach(3)"
-         Tab(1).Control(22)=   "txtCurrPos(1)"
-         Tab(1).Control(23)=   "txtCurrPos(2)"
-         Tab(1).Control(24)=   "txtCurrPos(3)"
-         Tab(1).Control(25)=   "Frame20"
-         Tab(1).Control(26)=   "txtPickH"
-         Tab(1).Control(27)=   "txtPlaceH"
-         Tab(1).Control(28)=   "Command13"
-         Tab(1).Control(29)=   "Command14"
-         Tab(1).Control(30)=   "Command15"
+         Tab(1).Control(16)=   "Command10"
+         Tab(1).Control(17)=   "Command5"
+         Tab(1).Control(18)=   "txtWriteTeach(0)"
+         Tab(1).Control(19)=   "txtTeachIndex"
+         Tab(1).Control(20)=   "Text2"
+         Tab(1).Control(21)=   "Text1"
+         Tab(1).Control(22)=   "Frame19"
+         Tab(1).Control(23)=   "Frame18"
+         Tab(1).Control(24)=   "txtRobotPort"
+         Tab(1).Control(25)=   "fgTeach"
+         Tab(1).Control(26)=   "lbName(168)"
+         Tab(1).Control(27)=   "lbName(167)"
+         Tab(1).Control(28)=   "lbName(166)"
+         Tab(1).Control(29)=   "lbName(165)"
+         Tab(1).Control(30)=   "lbName(164)"
          Tab(1).ControlCount=   31
          TabCaption(2)   =   "警報設置"
          TabPicture(2)   =   "frmConfiguration.frx":0208
@@ -3075,11 +3083,19 @@ Begin VB.Form frmConfiguration
             Strikethrough   =   0   'False
          EndProperty
          ForeColor       =   &H000000C0&
-         Height          =   6615
+         Height          =   7095
          Left            =   -67680
          TabIndex        =   177
          Top             =   720
          Width           =   5655
+         Begin VB.CheckBox ChkTestMode 
+            Caption         =   "Enable"
+            Height          =   270
+            Left            =   1560
+            TabIndex        =   625
+            Top             =   6600
+            Width           =   1095
+         End
          Begin VB.CheckBox ChkShowChamberNo 
             Caption         =   "Enable"
             Height          =   270
@@ -3343,6 +3359,14 @@ Begin VB.Form frmConfiguration
             Value           =   1  'Checked
             Width           =   1455
          End
+         Begin VB.Label LbTestMode 
+            Caption         =   "TestMode:"
+            Height          =   255
+            Left            =   240
+            TabIndex        =   624
+            Top             =   6600
+            Width           =   1095
+         End
          Begin VB.Label Lb_ShowChamberNo 
             Caption         =   "ChamberNo"
             Height          =   255
@@ -3591,7 +3615,7 @@ Begin VB.Form frmConfiguration
             Strikethrough   =   0   'False
          EndProperty
          ForeColor       =   &H000000C0&
-         Height          =   9015
+         Height          =   9615
          Left            =   -74760
          TabIndex        =   133
          Top             =   720
@@ -3984,7 +4008,7 @@ Begin VB.Form frmConfiguration
          Height          =   2415
          Left            =   -67680
          TabIndex        =   118
-         Top             =   7320
+         Top             =   7920
          Width           =   5655
          Begin VB.TextBox TxthdTimes 
             Height          =   400
@@ -7320,7 +7344,7 @@ Begin VB.Form frmConfiguration
          EndProperty
          ForeColor       =   &H000000C0&
          Height          =   7335
-         Left            =   -69240
+         Left            =   5760
          TabIndex        =   4
          Top             =   780
          Width           =   7335
@@ -7825,7 +7849,7 @@ Begin VB.Form frmConfiguration
          EndProperty
          ForeColor       =   &H000000C0&
          Height          =   7335
-         Left            =   -74880
+         Left            =   120
          TabIndex        =   3
          Top             =   780
          Width           =   5535
@@ -7856,7 +7880,7 @@ Begin VB.Form frmConfiguration
          EndProperty
          ForeColor       =   &H000000C0&
          Height          =   7335
-         Left            =   6600
+         Left            =   -68400
          TabIndex        =   2
          Top             =   780
          Width           =   5655
@@ -8182,7 +8206,7 @@ Begin VB.Form frmConfiguration
          EndProperty
          ForeColor       =   &H000000C0&
          Height          =   7335
-         Left            =   480
+         Left            =   -74520
          TabIndex        =   1
          Top             =   780
          Width           =   6015
@@ -8648,6 +8672,7 @@ Const NAME_MFC_READ_4 = "MFC4 Read"
 Const NAME_MFC_READ_5 = "MFC5 Read"
 Const NAME_MFC_READ_6 = "MFC6 Read"
 Const NAME_VACUUM_GAUGE = "Vacuum Gauge"
+Const NAME_VACUUM_GAUGE2 = "Vacuum gauge 2"
 Const NAME_OXYGEN_GAUGE = "Oxygen Gauge"
 Const NAME_TC_CVT_1 = "TC Converter1"
 Const NAME_PYROMETER = "Pyrometer" 'Reserved
@@ -8925,6 +8950,7 @@ Public Sub InitialIO()
 '    gblngAI_MFC_Read(3) = 10
 '    gblngAI_MFC_Read4 = 11
     gblngAI_Vacuum_Gauge = -12
+    gblngAI_Vacuum_Gauge2 = -12
     gblngAI_Oxygen_Gauge = -12
     gblngAI_TC_Cvt1 = 7
     gblngAI_TC_Cvt2 = 8
@@ -9178,6 +9204,7 @@ Public Sub InitialForm()
         If gblngAI_MFC_Read(2) >= 0 Then .TextMatrix(1 + gblngAI_MFC_Read(2), 1) = NAME_MFC_READ_3
         If gblngAI_MFC_Read(3) >= 0 Then .TextMatrix(1 + gblngAI_MFC_Read(3), 1) = NAME_MFC_READ_4
         If gblngAI_Vacuum_Gauge >= 0 Then .TextMatrix(1 + gblngAI_Vacuum_Gauge, 1) = NAME_VACUUM_GAUGE
+        If gblngAI_Vacuum_Gauge2 >= 0 Then .TextMatrix(1 + gblngAI_Vacuum_Gauge2, 1) = NAME_VACUUM_GAUGE2
         If gblngAI_Oxygen_Gauge >= 0 Then .TextMatrix(1 + gblngAI_Oxygen_Gauge, 1) = NAME_OXYGEN_GAUGE
         If gblngAI_TC_Cvt1 >= 0 Then .TextMatrix(1 + gblngAI_TC_Cvt1, 1) = NAME_TC_CVT_1
         'Rev4.1.4
@@ -9195,6 +9222,7 @@ Public Sub InitialForm()
     cmbIOList(2).AddItem NAME_MFC_READ_5
     cmbIOList(2).AddItem NAME_MFC_READ_6
     cmbIOList(2).AddItem NAME_VACUUM_GAUGE
+    cmbIOList(2).AddItem NAME_VACUUM_GAUGE2
     cmbIOList(2).AddItem NAME_OXYGEN_GAUGE
     cmbIOList(2).AddItem NAME_TC_CVT_1
     'Rev4.1.4
@@ -9710,6 +9738,9 @@ Public Sub ReloadIO()
         End If
         If fgAI.TextMatrix(i, 1) = NAME_VACUUM_GAUGE Then
             gblngAI_Vacuum_Gauge = i - 1
+        End If
+        If fgAI.TextMatrix(i, 1) = NAME_VACUUM_GAUGE2 Then
+            gblngAI_Vacuum_Gauge2 = i - 1
         End If
         If fgAI.TextMatrix(i, 1) = NAME_OXYGEN_GAUGE Then
             gblngAI_Oxygen_Gauge = i - 1
@@ -11379,11 +11410,6 @@ Public Sub ParameterOpen()
     Call RefreshFunctionRight
     Call InitialIO
     Call SetCTSlope
-    
-    If Para.RtaType = 9 And IsUsedSCR = 1 Then
-        frmModBusRtu.WriteHoldSCR
-    End If
-    
     Exit Sub
     
 ERR_PARAMETER_OPEN:
@@ -11836,6 +11862,18 @@ Private Sub tmrAIO_Timer()
             SetDO gblngDO_APCGaugeValve, False
         End If
     End If
+    
+      If gbsngGaugeValue2 > 0 Then
+'        If Kernel.sngPressure < gbsngGaugeValue / 1000 Then
+       If Kernel.sngPressure2 < gbsngGaugeValue2 / 1000 And SysAI.AvgValue(gblngAI_Vacuum_Gauge2) > 0 Then
+            SetDO gblngDO_APCGaugeValve, True
+        Else
+            SetDO gblngDO_APCGaugeValve, False
+        End If
+    End If
+    
+    
+    
     If Para.sngGaugeAngle > 0 Then
         If Kernel.sngPressure < Para.sngGaugeAngle / 1000 Then
             SetDO gblngDO_APCGaugeAngle, True
@@ -12175,6 +12213,10 @@ Private Sub OpenFunctionIni()
         Else
         mdifrmRTP.tbrRTP.Buttons(15).Visible = False
       End If
+      Switch = CommnonReadini("FuncSwitch", "TestMode", StrFileName)
+      GbTestMode_Switch = CInt(Switch)
+      ChkTestMode.value = GbTestMode_Switch
+      frmPlotProcess.FraVac2.Visible = IIf(GbTestMode_Switch = 1, True, False)
       Exit Sub
 ERR_OpenFuctionIni:
     Call AlertShow("Open Function.ini Failed!!", ERRORTYPE)
@@ -12194,6 +12236,7 @@ Private Sub SaveFunctionIni()
       lngRet = WritePrivateProfileString("FuncSwitch", "CTDisplay", CStr(ckeCTDisplay.value), StrFileName)
       lngRet = WritePrivateProfileString("FuncSwitch", "CheckTcWafer", CStr(chkAlarmEnable(14).value), StrFileName)
       lngRet = WritePrivateProfileString("FuncSwitch", "CheckRValue", CStr(chkAlarmEnable(15).value), StrFileName)
+      lngRet = WritePrivateProfileString("FuncSwitch", "TestMode", CStr(ChkTestMode.value), StrFileName)
       gbintActiveAlarm_TcWafer = chkAlarmEnable(14).value
       gbintActiveAlarm_RValue = chkAlarmEnable(15).value
       lngRet = WritePrivateProfileString("Device2", "IsUsed", CStr(ckSCREable.value), App.Path + ModbusRtu_Path)

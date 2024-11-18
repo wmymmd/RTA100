@@ -261,6 +261,10 @@ Private Sub tmrProcessStep_Timer()
 '                    Az2.intTime2 = gbProcessRecipeStep(CurrProc.intStep + 1).sngTime
 '                    gbintAz2ProcNo = 1
 '                End If
+                If Para.RtaType = 9 And IsUsedSCR = 1 Then
+                    DoEvents
+                    frmModBusRtu.WriteRamupSCR
+                End If
                 If MultiLoop.blnUseMultiLoop = True Then
                     If gbintRampHoldCount = 1 Then
                         For i = 0 To GB_MAX_LOOPS - 1
@@ -293,6 +297,10 @@ Private Sub tmrProcessStep_Timer()
                 SaveDebugLog "Start", 17
                 Call frmHistory.AppendLogAlert(1, "Process", 1003, "Hold process", 1)
                 SaveDebugLog "Start", 18
+                If Para.RtaType = 9 And IsUsedSCR = 1 Then
+                    DoEvents
+                    frmModBusRtu.WriteHoldSCR
+                End If
                 If MultiLoop.blnUseMultiLoop = True Then
                     For i = 0 To GB_MAX_LOOPS - 1
                         If gbintRampHoldCount >= Para.intMonitorIndex And MultiLoop.intLoopMK(i) > 0 And Para.IsCali = 1 Then
