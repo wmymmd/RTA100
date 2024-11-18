@@ -1,7 +1,0 @@
-[Report]
-CurrReportIndex=5
-1=11:22:37,11:22:45,Broken,บ|ฒvด๚ธี.rcp,,,
-2=13:47:03,13:47:08,Broken,test2024.rcp,,,
-3=13:50:15,13:50:19,Broken,test2024.rcp,,,
-4=13:52:32,13:53:25,Broken,T500R20H300-PID_test.rcp,,,
-5=13:54:20,13:55:09,Broken,T500R20H300-PID_test.rcp,,,

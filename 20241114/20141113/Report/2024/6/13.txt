@@ -1,3 +1,0 @@
-[Report]
-CurrReportIndex=1
-1=18:29:17,18:29:26,Broken,บ|ฒvด๚ธี.rcp,,,

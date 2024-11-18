@@ -1,6 +1,0 @@
-[Report]
-CurrReportIndex=4
-1=09:17:15,09:19:39,Broken,apc 650r20 30 80Hz.rcp,,,
-2=09:19:42,10:26:11,Broken,apc 650r20 30 80Hz.rcp,,,
-3=11:24:04,11:27:17,Broken,4inch 9 pcs600 r10-6 loop-6.rcp,,,
-4=11:54:48,13:58:19,Broken,4inch 9 pcs550 r10-15.rcp,,,

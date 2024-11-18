@@ -1,9 +1,0 @@
-[Report]
-CurrReportIndex=7
-1=16:43:11,16:43:11,Broken,CoverTest.rcp,,,
-2=16:43:37,16:43:38,Broken,CoverTest.rcp,,,
-3=16:44:02,16:44:15,Broken,CoverTest.rcp,,,
-4=16:44:33,16:44:51,OK,CoverTest.rcp,,,
-5=16:44:57,16:45:16,OK,CoverTest.rcp,,,
-6=16:58:09,16:58:10,Broken,CoverTest.rcp,,,
-7=16:58:27,16:58:45,OK,CoverTest.rcp,,,

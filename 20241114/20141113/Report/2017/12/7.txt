@@ -1,6 +1,0 @@
-[Report]
-CurrReportIndex=4
-1=16:02:39,16:03:26,Broken,cb sf 550.rcp,,,
-2=16:03:38,16:04:43,Broken,bengbu550.rcp,,,
-3=16:05:16,16:06:39,Broken,bengbu550.rcp,,,
-4=16:07:12,16:17:58,OK,bengbu550.rcp,,,

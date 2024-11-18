@@ -1,3 +1,0 @@
-[Report]
-CurrReportIndex=1
-1=11:43:26,11:43:55,Broken,500r10.rcp,,,

@@ -1,4 +1,0 @@
-[Report]
-CurrReportIndex=2
-1=18:22:31,18:22:41,Broken,test-1.rcp,,,
-2=19:03:53,19:04:09,Broken,up touch-27-chih.rcp,,,

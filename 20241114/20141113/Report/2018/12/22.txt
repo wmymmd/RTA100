@@ -1,6 +1,0 @@
-[Report]
-CurrReportIndex=4
-1=00:07:49,00:08:50,OK,AutoTest-1min.rcp,,,
-2=00:13:02,00:14:03,OK,AutoTest-1min.rcp,,,
-3=00:25:56,00:26:57,OK,AutoTest-1min.rcp,,,
-4=00:31:08,00:32:09,OK,AutoTest-1min.rcp,,,
